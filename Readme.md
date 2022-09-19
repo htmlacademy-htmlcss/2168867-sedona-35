@@ -1,7 +1,7 @@
 # Личный проект «Седона»
 
 * Студент: [Ирина Лемешкина](https://up.htmlacademy.ru/htmlcss/35/user/2168867).
-* Наставник: `Неизвестно`.
+* Наставник: [Егор Глебов] (https://htmlacademy.ru/profile/beast)
 
 ---
 
