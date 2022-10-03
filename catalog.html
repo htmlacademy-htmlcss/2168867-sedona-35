@@ -61,7 +61,7 @@
 					</ul>
 				</div>
 				<div class="catalog_filter_group">
-					<p class="catalog-filter_title">Инфраструктура:</p>
+					<p class="catalog-filter_title">Тип жилья:</p>
 					<ul class="catalog_filter_list">
 						<li class="catalog_filter_item">
 							<label class="control">
@@ -82,14 +82,16 @@
 				<button class="button">Сбросить</button>
 			</form>
 		</section>
+
 		<section class="cards_all">
 			<h2 class="cards_all_title">
           Найдено гостиниц:38
         </h2>
+
 			<select class="select_control" aria-label="Сортировка">
 				<option value="cheap">Сначала дешевые</option>
-				<option value="cheap">Сначала дорогие</option>
-				<option value="cheap">Сначала популярные</option>
+				<option value="expensive">Сначала дорогие</option>
+				<option value="popular">Сначала популярные</option>
 			</select>
 			<a href="#" class="button"> <span class="visually_hidden">
               Показать карточки
@@ -100,6 +102,7 @@
 			<a href="#" class="button"> <span class="visually_hidden">
                   Показать список
                 </span> <img class="filter_text" src="Images/Catalog/filter_text.svg" alt="Показать список"> </a>
+
 			<section class="product_list">
 				<section class="product_card"> <img class="product_card_image" src="Images/Hotel/hotel_1.jpg" alt="Amara">
 					<a class="product_card_link" href="product.html">
@@ -138,24 +141,26 @@
 					<p class="product_card_rating">Рейтинг 8,5</p>
 				</section>
 			</section>
-			<ul class="pagination">
-				<li class="pagination_item"> <a class="pagination_link pagination_current">1</a> </li>
-				<li class="pagination_item"> <a class="pagination_link">2</a> </li>
-				<li class="pagination_item"> <a class="pagination_link">3</a> </li>
-				<li class="pagination_item"> <a class="pagination_link">4</a> </li>
-				<li class="pagination_item"> <a class="pagination_link">...</a> </li>
-				<li class="pagination_item"> <a class="pagination_link">10</a> </li>
-			</ul>
+
+			<div class="pagination">
+				<a class="pagination_link pagination_current">1</a> </li>
+				<a class="pagination_link">2</a> </li>
+				<a class="pagination_link">3</a> </li>
+				<a class="pagination_link">4</a> </li>
+				<a class="pagination_link">...</a> </li>
+				<a class="pagination_link">10</a> </li>
+      </div>
 		</section>
-		<section class="subscribe" data-test="subscribe">
+
+		<form class="subscribe_form" action="https://echo.htmlacademy.ru/" method="post">
 			<h3 class="subscribe_title">Подпишитесь на рассылку</h3>
 			<p class="subscribe_description">Только полезная информация и никакого спама, честное бойскаутское!</p>
-			<input type="text">
-			<form class="subscribe_form" action="https://echo.htmlacademy.ru/" method="post">
 				<button class="subscribe_button">Подписаться</button>
+        <input type="text">
 			</form>
 		</section>
 	</main>
+
 	<footer class="page_footer" data-test="footer">
 		<div class="footer_social">
 			<a class="button" href="https://vc.com/htmlacademy"> <span class="visually_hidden">Вконтакте</span> <img class="social_logo" src="Images/Footer/vkontakte.svg" width="24" height="14" alt="Вконтакте"> </a>
