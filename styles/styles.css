@@ -74,7 +74,7 @@ body {
  .advantages_title {
   text-transform: uppercase;
   text-align: center;
-  font-size: 20px;
+  font-size: 24px;
   font-weight: 700;
   line-height: 28px;
  }
@@ -139,5 +139,13 @@ body {
 }
 
 .product_card_stars {
-  background-image: url("../images/catalog/star.svg");;
+  background-image: url("../images/catalog/star.svg");
+}
+
+.breadcrumbs_home_logo {
+  background-image: url("../images/catalog/home.svg");
+}
+
+.advantages_item_light_blue .house {
+  background-image: url("../images/advantages/house.svg");
 }
