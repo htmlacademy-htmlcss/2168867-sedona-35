@@ -108,6 +108,8 @@ body {
 
  .subscribe_form {
   background-image: url("../images/subscribes.jpg");
+  background-size: 100% auto;
+  background-repeat: no-repeat;
  }
 .subscribe_description {
   text-align: center;
@@ -146,6 +148,26 @@ body {
   background-image: url("../images/catalog/home.svg");
 }
 
-.advantages_item_light_blue .house {
-  background-image: url("../images/advantages/house.svg");
+.advantages_title.house::before {
+  width: 75px;
+  height: 72px;
+  background-size: contain;
+  content: url("../images/advantages/house.svg");
+  position: absolute;
+}
+
+.advantages_title.food::before {
+  width: 75px;
+  height: 72px;
+  background-size: contain;
+  content: url("../images/advantages/food.svg");
+  position: absolute;
+}
+
+.advantages_title.gifts::before {
+  width: 75px;
+  height: 72px;
+  background-size: contain;
+  content: url("../images/advantages/gifts.svg");
+  position: absolute;
 }
