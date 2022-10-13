@@ -2,7 +2,7 @@
   font-family: "PT Sans";
   font-style: normal;
   font-weight: 700;
-  src: url("../fonts/ptsans-700.woff2" ) format("woff2");
+  src: url("../fonts/ptsans-700.woff2") format("woff2");
   font-display: swap;
 }
 
@@ -10,20 +10,74 @@
   font-family: "PT Sans";
   font-style: normal;
   font-weight: 400;
-  src: url("../fonts/ptsans-400.woff2" ) format("woff2");
+  src: url("../fonts/ptsans-400.woff2") format("woff2");
   font-display: swap;
 }
+
+html {
+  height: 100%;
+
+}
+
 body {
+  margin: 0;
   font-family: "PT Sans", sans-serif;
   font-size: 22px;
   line-height: 26px;
   color: rgba(0, 0, 0, 1);
-  background-color:rgba(255, 255, 255, 1);
+  background-color: rgba(242, 242, 242, 1);
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
+}
+
+.main-container {
+  width: 1205px;
+  flex-grow: 1;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+}
+
+.main_index {
+  background-size: 100% auto;
+  background-repeat: no-repeat;
+  background-color: rgba(255, 255, 255, 1);
+  color: rgba(0, 0, 0, 1);
+  background-image: url("../images/hero/hero_new.jpg");
+  height: 485px;
 }
 
 .page_header {
   color: rgba(0, 0, 0, 1);
-  background-color:rgba(255, 255, 255, 1);
+  background-color: rgba(255, 255, 255, 1);
+  width: 1205px;
+}
+
+.logo {
+  display: block;
+  margin-left: 70px;
+}
+
+.navigation {
+  display: flex;
+  width: 1205px;
+}
+
+.navigation_list {
+  width: 339px;
+  display: flex;
+  justify-content: space-between;
+  margin-left: 28px;
+  list-style: none;
+}
+
+.navigation_list.navigation_right {
+  margin: auto;
+  max-width: 268px;
+  align-items: center;
+  justify-content: space-between;
+  padding-top: 14px;
 }
 
 .navigation_link {
@@ -33,107 +87,231 @@ body {
   color: rgba(0, 0, 0, 1);
   text-decoration: none;
   text-align: center;
- }
+}
 
- .navigation_link_button {
+.navigation_link_button {
   background-color: rgba(117, 97, 87, 1);
+  border-radius: 4px;
   font-size: 20px;
   font-weight: 700;
   line-height: 24px;
   color: rgba(255, 255, 255, 1);
   text-decoration: none;
   text-align: center;
- }
+  width: 160px;
+  height: 36px;
+}
 
- .navigation_link_pagination_current {
+.navigation_link_pagination_current {
   background-color: rgba(242, 242, 242, 1);
   color: rgba(0, 0, 0, 1);
- }
+}
 
- .subscribe_button {
-  background-color: rgba(130, 179, 211, 1);
-  color: rgba(255, 255, 255, 1);
- }
- .main_index {
-  background-size: 100% auto;
-  background-repeat: no-repeat;
-  background-color:rgba(255, 255, 255, 1);
-  color: rgba(0, 0, 0, 1);
-  background-image: url("../images/hero/hero.jpg");
- }
+.page-container {
+  width: 1200px;
+  margin: 0 auto;
+}
 
- .hero_title {
+.hero {
+  background-color: rgba(255, 255, 255, 1);
+  height: 282px;
+  margin: 0;
+}
+
+.hero_description {
+  text-align: center;
+}
+
+.hero_title {
   text-transform: uppercase;
   text-align: center;
- }
+  width: 620px;
+  padding-left: 290px;
+  padding-right: 290px;
+  padding-top: 69px;
+  margin: 0;
+}
 
- .hero_description {
+.hero_description {
+  max-width: 651px;
+  align-items: center;
+  padding-left: 275px;
+  padding-top: 25px;
+  padding-bottom: 90px;
+}
+
+.advantages {
+  margin: 0;
+}
+
+.advantages_list {
+  display: flex;
+  justify-content: space-between;
+  margin: 0;
+  padding: 0;
   text-align: center;
- }
+  list-style: none;
+}
 
- .advantages_title {
+.advantages_title {
   text-transform: uppercase;
   text-align: center;
   font-size: 24px;
   font-weight: 700;
   line-height: 28px;
- }
+  width: 230px;
+  margin: 0;
+  padding-top: 92px;
+  padding-left: 125px;
+}
 
- .advantages_description {
+
+.advantages_title.house::before {
+  width: 75px;
+  height: 75px;
+  background-size: contain;
+  content: url("../images/advantages/house.svg");
+}
+
+  .advantages_title.food::before {
+  width: 75px;
+  height: 72px;
+  background-size: contain;
+  content: url("../images/advantages/food.svg");
+}
+
+.advantages_title.gifts::before {
+  width: 75px;
+  height: 72px;
+  background-size: contain;
+  content: url("../images/advantages/gifts.svg");
+}
+
+.advantages_description {
   text-align: center;
   font-size: 18px;
   font-weight: 400;
   line-height: 21px;
- }
+  margin: 0;
+  width: 230px;
+  padding-top: 201px;
+}
 
- .booking_title {
+.advantages_item_blue {
+  display: flex;
+  background-color: rgba(130, 179, 211, 1);
+  min-width: 400px;
+  min-height: 384px;
+  margin: 0;
+  color: rgba(255, 255, 255, 1);
+}
+
+.advantages_item_light_blue {
+  display: flex;
+  background-color: rgba(130, 179, 211, 0.12);
+  width: 400px;
+  min-height: 384px;
+  display: flex;
+  flex-direction: column;
+}
+
+.advantages_item .nolight_blue {
+  display: flex;
+  background-color: rgba(130, 179, 211, 0.2);
+  width: 400px;
+  min-height: 384px;
+}
+
+.advantages_photo_central {
+  width: 800px;
+  margin-left: auto;
+}
+
+.booking {
+  background-color: rgba(255, 255, 255, 1);
+  margin: 0;
+}
+.booking_title {
   text-transform: uppercase;
   text-align: center;
   font-size: 30px;
   font-weight: 700;
   line-height: 36px;
- }
+}
 
- .booking_description {
+.booking_description {
   text-align: center;
- }
+  max-width: 592px;
+  padding-left: 304px;
+}
 
- .booking_link {
+.booking_link {
   text-transform: uppercase;
   text-align: center;
   font-size: 20px;
   font-weight: 700;
   line-height: 36px;
- }
+}
 
- .subscribe_form {
+.boking_button {
+  text-align: center;
+}
+
+.subscribe {
+  text-align: center;
+  margin: 0;
+}
+
+.subscribe_form {
   background-image: url("../images/subscribes.jpg");
   background-size: 100% auto;
   background-repeat: no-repeat;
- }
+  width: 1200px;
+  height: 414px;
+
+}
+
+.subscribe_title {
+  text-transform: uppercase;
+  text-align: center;
+  font-size: 30px;
+  font-weight: 700;
+  line-height: 36px;
+  color: rgba(255, 255, 255, 1);
+  padding-top: 96px;
+  padding-bottom: 20px;
+}
+
 .subscribe_description {
   text-align: center;
-}
-
-.advantages_item_light_blue{
-  background-color: rgba(130, 179, 211, 0.12);
-}
-
-.advantages_item_blue {
-  background-color:  rgba(130, 179, 211, 1);
-}
-
-.advantages_item .nolight_blue {
-  background-color: rgba(130, 179, 211, 0.2);
-}
-
-.contacts a {
-  font-size: 40px;
+  font-size: 22px;
   font-weight: 400;
-  line-height: 40px;
-  color: rgba(0, 0, 0, 1);
-  text-decoration: none;
-  text-align: center;
+  line-height: 26px;
+  color: rgba(255, 255, 255, 1);
+  padding-bottom: 34px;
+  max-width: 475px;
+  padding-left: 363px;
+}
+
+.subscribe_button {
+  border-radius: 4px;
+  border: none;
+  width: 232px;
+  height: 52px;
+  font-size: 20px;
+  font-weight: 700;
+  color: rgba(255, 255, 255, 1);
+  line-height: 36px;
+  text-transform: uppercase;
+  background-color: rgba(130, 179, 211, 1);
+
+}
+
+input {
+  width: 452px;
+  height: 52px;
+  border-radius: 4px;
+  border: none;
 }
 
 .product_card_rating {
@@ -148,26 +326,49 @@ body {
   background-image: url("../images/catalog/home.svg");
 }
 
-.advantages_title.house::before {
-  width: 75px;
-  height: 72px;
-  background-size: contain;
-  content: url("../images/advantages/house.svg");
-  position: absolute;
+.page_footer {
+  background-color: rgba(255, 255, 255, 1);
+  width: 1200px;
+  display: flex;
 }
 
-.advantages_title.food::before {
-  width: 75px;
-  height: 72px;
-  background-size: contain;
-  content: url("../images/advantages/food.svg");
-  position: absolute;
+.footer_container {
+  display: flex;
+  justify-content: space-between;
+  width: 1060px;
+  margin: 0;
+  padding: 0;
+  max-height: 120px;
 }
 
-.advantages_title.gifts::before {
-  width: 75px;
-  height: 72px;
-  background-size: contain;
-  content: url("../images/advantages/gifts.svg");
-  position: absolute;
+.footer_social {
+  max-width: 142px;
+  margin: 0;
+  padding-left: 70px;
+}
+
+.footer_logo_html {
+  margin-left: auto;
+  padding-right: 70px;
+}
+
+.navigation_link .footer {
+width: 47px;
+height: 40px;
+}
+
+.contacts a {
+  text-decoration: none;
+  color: rgba(0, 0, 0, 1);
+  font-size: 40px;
+}
+
+.contacts {
+  width: 720px;
+  padding-top: 40px;
+  padding-bottom: 30px;
+}
+
+.visually_hidden {
+  visibility: hidden;
 }

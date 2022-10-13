@@ -9,8 +9,8 @@
 
 <body>
   <header class="page_header" data-test="header">
-    <a class="navigation_link" href="#"> <img class="logo" src="Images/Header/logo.svg" width="140" height="70" alt="Уютный городок Седона"> </a>
     <nav class="navigation">
+      <a class="navigation_link" href="#"> <img class="logo" src="Images/Header/logo.svg" width="138" height="64" alt="Уютный городок Седона"> </a>
       <ul class="navigation_list">
         <li class="navigation_item"> <a class="navigation_link" href="main.html">Главная</a> </li>
         <li class="navigation_item"> <a class="navigation_link" href="about.htmn">О Седоне</a> </li>
@@ -22,25 +22,30 @@
     </span> <img class="header_logo" src="Images/Header/search.svg" width="44" height="64" alt="Поиск"> </a>
         <a class="navigation_link" href="#"> <span class="visually_hidden">
       Избранное
-    </span> <img class="header_logo" src="Images/Header/like.svg" width="44" height="64" alt="Избранное"> </a>
+    </span> <img class="header_logo" src="Images/Header/like.svg" width="18" height="18" alt="Избранное"> </a>
         <a class="navigation_link_button" href="#">Хочу сюда</a>
       </div>
     </nav>
   </header>
 
-  <main class="main_index">
+  <main class="main-container">
+    <div class="page_container">
+      <div class="main_index">
     <h1 class="visually_hidden">Седона</h1>
+  </div>
     <section class="hero">
       <h2 class="hero_title">Седона — небольшой городок в Аризоне,
     заслуживающий большего!</h2>
       <p class="hero_description">Рассмотрим причины, по которым Седона круче, чем Гранд-Каньон!</p>
     </section>
-    <section class="advantages" data-test="advantages">
+    <section class="advantages">
       <h2 class="visually_hidden">Преимущества</h2>
       <div class="advantages_item_blue">
         <h3 class="advantages_title">Настоящий городок</h3>
-        <p class="advantages_description">Седона — не аттракцион для туристов, там течёт своя жизнь</p> <img class="advantages_photo" src="Images/Advantages/сentral_square.jpg" width="800" height="384" alt="Центральная площадь города"> </div>
-      <ul class="advantages_list">
+        <p class="advantages_description">Седона — не аттракцион для туристов, там течёт своя жизнь</p>
+        <img class="advantages_photo_central" src="Images/Advantages/сentral_square.jpg" width="800" height="384" alt="Центральная площадь города">
+      </div>
+        <ul class="advantages_list">
         <li class="advantages_item_light_blue">
           <h3 class="advantages_title">Небольшая площадь</h3>
           <p class="advantages_description">Все достопримечательности находятся очень близко</p>
@@ -76,24 +81,35 @@
     <section class="booking" data-test="search">
       <h3 class="booking_title">Заинтересовались?</h3>
       <p class="booking_description">Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в Седоне</p>
+      <div class="boking_button">
       <a class="navigation_link_button">Поиск гостиницы в Седоне</a>
+    </div>
     </section>
     <form class="subscribe_form" action="https://echo.htmlacademy.ru/" method="post">
-      <h3 class="booking_title">Подпишитесь на рассылку</h3>
+      <div class="subscribe">
+      <h3 class="subscribe_title">Подпишитесь на рассылку</h3>
       <p class="subscribe_description">Только полезная информация и никакого спама, честное бойскаутское!</p>
       <input type="text">
       <button class="subscribe_button">Подписаться</button>
+    </div>
     </form>
+  </div>
   </main>
-  <footer class="page_footer" data-test="footer">
+  <footer class="page_footer">
+    <div class="footer_container">
     <div class="footer_social">
       <a class="navigation_link" href="https://vc.com/htmlacademy"> <span class="visually_hidden">Вконтакте</span> <img class="social_logo" src="Images/Footer/vkontakte.svg" width="24" height="14" alt="Вконтакте"> </a>
       <a class="navigation_link" href="https://t.me/htmlacademy"> <span class="visually_hidden">Телеграмм</span> <img class="social_logo" src="Images/Footer/telegram.svg" width="24" height="14" alt="Телеграм"> </a>
       <a class="navigation_link" href="https://www.youtoobe.com/user/htmlacademy"> <span class="visually_hidden">Ютуб</span> <img class="social_logo" src="Images/Footer/youtube.svg" width="24" height="14" alt="Ютуб"> </a>
     </div>
-    <div class="contacts"> <a href="tel:78128121212">+7(812)812-12-12</a> <img class="logo_html" src="Images/Footer/html_academy.svg" width="114" height="33" alt="Логотип компании htmlacademy">
-      <a class="navigation_link" href="https://htmlacademy.ru/"></a>
+    <div class="contacts">
+   <a class="contacts" href="tel:78128121212">+7(812)812-12-12</a>
+      <div class="footer_logo_html">
+      <img class="logo_html" src="Images/Footer/html_academy.svg" width="114" height="33" alt="Логотип компании htmlacademy">
+      <a class="footer navigation_link" href="https://htmlacademy.ru/"></a>
     </div>
+  </div>
+  </div>
   </footer>
 </body>
 
