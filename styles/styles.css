@@ -16,11 +16,10 @@
 
 html {
   height: 100%;
-
 }
 
 body {
-  margin: 0;
+  margin: 0 40px;
   font-family: "PT Sans", sans-serif;
   font-size: 22px;
   line-height: 26px;
@@ -32,15 +31,12 @@ body {
 }
 
 .main-container {
-  width: 1205px;
-  flex-grow: 1;
-  margin: 0 auto;
-  display: flex;
-  flex-direction: column;
+  width: 100%;
+  margin: 0;
 }
 
 .main_index {
-  background-size: 100% auto;
+  background-size: 100%;
   background-repeat: no-repeat;
   background-color: rgba(255, 255, 255, 1);
   color: rgba(0, 0, 0, 1);
@@ -51,7 +47,8 @@ body {
 .page_header {
   color: rgba(0, 0, 0, 1);
   background-color: rgba(255, 255, 255, 1);
-  width: 1205px;
+  width: 100%;
+  min-height: 64px;
 }
 
 .logo {
@@ -60,24 +57,28 @@ body {
 }
 
 .navigation {
+  width: 507px;
   display: flex;
-  width: 1205px;
+  justify-content: space-between;
 }
 
 .navigation_list {
   width: 339px;
   display: flex;
-  justify-content: space-between;
-  margin-left: 28px;
+  justify-content: flex-start;
+  margin-left: 30px;
   list-style: none;
+  margin-right: 285px;
 }
 
 .navigation_list.navigation_right {
-  margin: auto;
-  max-width: 268px;
-  align-items: center;
-  justify-content: space-between;
+  margin: 0;
   padding-top: 14px;
+  padding-right: 70px;
+  width: 268px;
+  align-items: center;
+  display: flex;
+  justify-content: flex-end;
 }
 
 .navigation_link {
@@ -87,6 +88,7 @@ body {
   color: rgba(0, 0, 0, 1);
   text-decoration: none;
   text-align: center;
+  width: 507px;
 }
 
 .navigation_link_button {
@@ -98,8 +100,9 @@ body {
   color: rgba(255, 255, 255, 1);
   text-decoration: none;
   text-align: center;
-  width: 160px;
+  min-width: 160px;
   height: 36px;
+  text-transform: uppercase;
 }
 
 .navigation_link_pagination_current {
@@ -107,14 +110,17 @@ body {
   color: rgba(0, 0, 0, 1);
 }
 
-.page-container {
-  width: 1200px;
-  margin: 0 auto;
+.navigation_item {
+  padding-left: 16px;
+  padding-right: 16px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  margin: 0;
+  min-width: 100px;
 }
 
 .hero {
   background-color: rgba(255, 255, 255, 1);
-  height: 282px;
   margin: 0;
 }
 
@@ -173,7 +179,7 @@ body {
   content: url("../images/advantages/house.svg");
 }
 
-  .advantages_title.food::before {
+.advantages_title.food::before {
   width: 75px;
   height: 72px;
   background-size: contain;
@@ -193,8 +199,9 @@ body {
   font-weight: 400;
   line-height: 21px;
   margin: 0;
-  width: 230px;
+  max-width: 230px;
   padding-top: 201px;
+
 }
 
 .advantages_item_blue {
@@ -207,7 +214,6 @@ body {
 }
 
 .advantages_item_light_blue {
-  display: flex;
   background-color: rgba(130, 179, 211, 0.12);
   width: 400px;
   min-height: 384px;
@@ -231,6 +237,7 @@ body {
   background-color: rgba(255, 255, 255, 1);
   margin: 0;
 }
+
 .booking_title {
   text-transform: uppercase;
   text-align: center;
@@ -266,7 +273,7 @@ body {
   background-image: url("../images/subscribes.jpg");
   background-size: 100% auto;
   background-repeat: no-repeat;
-  width: 1200px;
+  width: 100%;
   height: 414px;
 
 }
@@ -304,7 +311,6 @@ body {
   line-height: 36px;
   text-transform: uppercase;
   background-color: rgba(130, 179, 211, 1);
-
 }
 
 input {
@@ -312,6 +318,46 @@ input {
   height: 52px;
   border-radius: 4px;
   border: none;
+}
+
+.page_footer {
+  background-color: rgba(255, 255, 255, 1);
+  display: flex;
+  padding-left: 70px;
+  margin: 0;
+}
+
+.footer_container {
+  display: flex;
+  justify-content: space-between;
+  margin-right: 70px;
+  margin-left: 70px;
+  margin-top: 40px;
+  margin-bottom: 30px;
+  max-height: 120px;
+}
+
+.footer_social {
+  max-width: 142px;
+  margin-right: 42px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.footer_link {
+  margin: 10px;
+}
+
+.contacts_tel {
+  text-decoration: none;
+  color: rgba(0, 0, 0, 1);
+  font-size: 40px;
+  width: 720px;
+  margin: 0;
+}
+
+.visually_hidden {
+  visibility: hidden;
 }
 
 .product_card_rating {
@@ -324,51 +370,4 @@ input {
 
 .breadcrumbs_home_logo {
   background-image: url("../images/catalog/home.svg");
-}
-
-.page_footer {
-  background-color: rgba(255, 255, 255, 1);
-  width: 1200px;
-  display: flex;
-}
-
-.footer_container {
-  display: flex;
-  justify-content: space-between;
-  width: 1060px;
-  margin: 0;
-  padding: 0;
-  max-height: 120px;
-}
-
-.footer_social {
-  max-width: 142px;
-  margin: 0;
-  padding-left: 70px;
-}
-
-.footer_logo_html {
-  margin-left: auto;
-  padding-right: 70px;
-}
-
-.navigation_link .footer {
-width: 47px;
-height: 40px;
-}
-
-.contacts a {
-  text-decoration: none;
-  color: rgba(0, 0, 0, 1);
-  font-size: 40px;
-}
-
-.contacts {
-  width: 720px;
-  padding-top: 40px;
-  padding-bottom: 30px;
-}
-
-.visually_hidden {
-  visibility: hidden;
 }
