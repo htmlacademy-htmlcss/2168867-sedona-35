@@ -30,9 +30,8 @@ body {
   min-height: 100%;
 }
 
-.main-container {
-  width: 100%;
-  margin: 0;
+.main_container {
+  flex-grow: 1;
 }
 
 .main_index {
@@ -42,6 +41,8 @@ body {
   color: rgba(0, 0, 0, 1);
   background-image: url("../images/hero/hero_new.jpg");
   height: 485px;
+  width: 100%;
+  margin: 0;
 }
 
 .page_header {
