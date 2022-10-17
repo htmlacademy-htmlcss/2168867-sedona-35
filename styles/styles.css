@@ -65,14 +65,17 @@ body {
 }
 
 .navigation {
-  display: flex;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
   justify-content: space-between;
   margin: 0;
   width: 100%;
+  min-height: 64px;
 }
 
 .navigation_list {
   min-width: 339px;
+  max-height: 64px;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
@@ -104,6 +107,7 @@ body {
 .navigation_icons {
   display: flex;
   width: 88px;
+  max-height: 64px;
   margin: 0;
   vertical-align: middle;
 }
@@ -111,21 +115,23 @@ body {
 .navigation_link_button {
   background-color: rgba(117, 97, 87, 1);
   border-radius: 4px;
-  font-size: 20px;
   font-weight: 700;
-  line-height: 24px;
+  font-size: 16px;
+  line-height: 20px;
   color: rgba(255, 255, 255, 1);
   text-decoration: none;
   text-align: center;
   min-width: 160px;
-  min-height: 36px;
+  max-height: 36px;
   text-transform: uppercase;
   margin: 0;
+  padding-top: 8px;
+  padding-bottom: 8px;
 }
 
 .navigation_item {
   max-width: 100px;
-  min-height: 24px;
+  max-height: 24px;
   margin: 0;
   padding-left: 16px;
   padding-right: 16px;
@@ -442,7 +448,7 @@ input {
 
 .page_footer {
   background-color: rgba(255, 255, 255, 1);
-  display: flex;
+  display: grid;
   margin: 0;
 }
 
@@ -469,6 +475,11 @@ input {
   margin: 10px;
 }
 
+.footer_navigation_link {
+  margin: 0;
+  padding: 0;
+  width: 115px;
+}
 .contacts_tel {
   text-decoration: none;
   color: rgba(0, 0, 0, 1);
