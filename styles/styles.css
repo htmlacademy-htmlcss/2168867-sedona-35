@@ -206,18 +206,6 @@ body {
   position: relative;
 }
 
-.advantages_description::before {
-  content: url("../images/advantages/Decor_gray.svg");
-  background-size: contain;
-  position: absolute;
-  height: 2px;
-  top: 1394px;
-  padding-left: 170px;
-  padding-right: 170px;
-  margin-right: 200px;
-  left: 460px;
-}
-
 .advantages_title_light_blue {
   text-transform: uppercase;
   text-align: center;
@@ -230,6 +218,59 @@ body {
   padding-top: 102px;
   padding-left: 112.5px;
   padding-right: 112.5px;
+}
+
+.advantages_title_light_blue::after {
+  position: absolute;
+  content: url("../images/advantages/decor_gray.svg");
+  height: 2px;
+  width: 60px;
+  top: 1385px;
+  left: 630px;
+}
+
+.advantages_description {
+  text-align: center;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 21px;
+  margin: 0;
+  max-width: 230px;
+  padding-top: 62px;
+  padding-left: 85px;
+  padding-right: 85px;
+  padding-bottom: 111px;
+}
+
+.advantages_item_blue {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  background-color: rgba(130, 179, 211, 1);
+  min-width: 400px;
+  min-height: 384px;
+  margin: 0;
+  color: rgba(255, 255, 255, 1);
+  position: relative;
+
+}
+
+.advantages_item_light_blue {
+  background-color: rgba(130, 179, 211, 0.12);
+  width: 400px;
+  min-height: 384px;
+}
+
+.advantages_item_nolight_blue {
+  display: flex;
+  flex-direction: column;
+  background-color: rgba(130, 179, 211, 0.2);
+  width: 400px;
+  min-height: 384px;
+}
+
+.advantages_photo_central {
+  width: 800px;
+  margin-left: auto;
 }
 
 .services_title_house {
@@ -275,7 +316,7 @@ body {
   width: 75px;
   height: 75px;
   background-size: contain;
-  content: url("../images/advantages/house_decor.svg");
+  content: url("../images/advantages/house.svg");
   position: absolute;
   top: 80px;
   left: 2.5px;
@@ -286,7 +327,7 @@ body {
   width: 75px;
   height: 72px;
   background-size: contain;
-  content: url("../images/advantages/food_decor.svg");
+  content: url("../images/advantages/food.svg");
   position: absolute;
   top: 80px;
   left: 162.5px;
@@ -297,53 +338,11 @@ body {
   width: 75px;
   height: 72px;
   background-size: contain;
-  content: url("../images/advantages/gifts_decor.svg");
+  content: url("../images/advantages/gifts.svg");
   position: absolute;
   top: 80px;
   left: 162.5px;
   right: 162.5px;
-}
-
-.advantages_description {
-  text-align: center;
-  font-size: 18px;
-  font-weight: 400;
-  line-height: 21px;
-  margin: 0;
-  max-width: 230px;
-  padding-top: 62px;
-  padding-left: 85px;
-  padding-right: 85px;
-  padding-bottom: 111px;
-}
-
-.advantages_item_blue {
-  display: grid;
-  grid-template-columns: 1fr 2fr;
-  background-color: rgba(130, 179, 211, 1);
-  min-width: 400px;
-  min-height: 384px;
-  margin: 0;
-  color: rgba(255, 255, 255, 1);
-}
-
-.advantages_item_light_blue {
-  background-color: rgba(130, 179, 211, 0.12);
-  width: 400px;
-  min-height: 384px;
-}
-
-.advantages_item_nolight_blue {
-  display: flex;
-  flex-direction: column;
-  background-color: rgba(130, 179, 211, 0.2);
-  width: 400px;
-  min-height: 384px;
-}
-
-.advantages_photo_central {
-  width: 800px;
-  margin-left: auto;
 }
 
 .booking {
@@ -382,7 +381,7 @@ body {
   font-size: 20px;
   font-weight: 700;
   line-height: 36px;
-  color: rgba(255, 255, 255, 1);
+  color: rgba(255, 255, 255, 1);befo
   text-decoration: none;
   text-align: center;
   max-width: 376px;
@@ -406,7 +405,7 @@ body {
 }
 
 .subscribe_form {
-  background-image: url("../images/subscribe.jpg");
+  background-image: url("../images/subscribe_back.jpg");
   background-size: 100% auto;
   background-repeat: no-repeat;
   width: 100%;
@@ -715,7 +714,7 @@ input {
   padding-bottom: 14px;
   padding-left: 16px;
   padding-right: 16px;
-  border: 2px solid rgba(0, 0, 0, 1);
+  border: 2px solid rgba(230, 230, 230, 1);
   border-radius: 4px;
   margin: 0;
 }
@@ -727,7 +726,7 @@ input {
   padding-bottom: 14px;
   padding-left: 16px;
   padding-right: 16px;
-  border: 2px solid rgba(0, 0, 0, 1);
+  border: 2px solid rgba(230, 230, 230, 1);
   border-radius: 4px;
   margin: 0;
 }
