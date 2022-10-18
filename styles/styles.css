@@ -275,7 +275,7 @@ body {
   width: 75px;
   height: 75px;
   background-size: contain;
-  content: url("../images/advantages/house.svg");
+  content: url("../images/advantages/house_decor.svg");
   position: absolute;
   top: 80px;
   left: 2.5px;
@@ -286,7 +286,7 @@ body {
   width: 75px;
   height: 72px;
   background-size: contain;
-  content: url("../images/advantages/food.svg");
+  content: url("../images/advantages/food_decor.svg");
   position: absolute;
   top: 80px;
   left: 162.5px;
@@ -297,7 +297,7 @@ body {
   width: 75px;
   height: 72px;
   background-size: contain;
-  content: url("../images/advantages/gifts.svg");
+  content: url("../images/advantages/gifts_decor.svg");
   position: absolute;
   top: 80px;
   left: 162.5px;
@@ -406,7 +406,7 @@ body {
 }
 
 .subscribe_form {
-  background-image: url("../images/subscribes.jpg");
+  background-image: url("../images/subscribe.jpg");
   background-size: 100% auto;
   background-repeat: no-repeat;
   width: 100%;
