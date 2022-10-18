@@ -9,6 +9,7 @@
 </head>
 
   <body>
+    <div class="container">
     <header class="page_header" data-test="header">
       <a class="navigation_logo" href="index.html"> <img class="logo" src="Images/Header/logo.svg" width="138"
           height="64" alt="Уютный городок Седона"> </a>
@@ -25,7 +26,7 @@
               </span> <img class="header_logo" src="Images/Header/search.svg" width="44" height="64" alt="Поиск"> </a>
             <a class="navigation_link" href="#"> <span class="visually_hidden">
                 Избранное
-              </span> <img class="header_logo" src="Images/Header/likie_green.svg" width="44" height="64"
+              </span> <img class="header_logo" src="Images/Header/like_green.svg" width="44" height="64"
                 alt="Избранное"> </a>
           </div>
           <a class="navigation_link_button" href="#">Хочу сюда!</a>
@@ -83,16 +84,13 @@
             </div>
           </div>
 
-          <div class="right_menu">
-            <div class="price">
-              <h3 class="price_title">Стоимость, &#8381; </h3>
-              <!--Здесь будет фильтр с ползунком и кнопки-->
-            </div>
-            <div class="price_button">
-              <button class="button_apply">Применить</button>
-              <button class="button_reset">Сбросить</button>
-            </div>
+          <!-- Здесь будет ползунок
+
+          <div class="price_button">
+            <button class="button_apply">Применить</button>
+            <button class="button_reset">Сбросить</button>
           </div>
+        -->
         </section>
       </div>
 
@@ -200,12 +198,13 @@
       <form class="subscribe_form_catalog" action="https://echo.htmlacademy.ru/" method="post">
         <div class="subscribe">
           <h3 class="subscribe_title_catalog">Подпишитесь на рассылку</h3>
-          <p class="subscribe_description_catalog">Только полезная информация и никакого спама, честное бойскаутское!</p>
-            <div class="input_button_catalog">
-              <input class="input_style" type="text" placeholder="Ваш e-mail">
+          <p class="subscribe_description_catalog">Только полезная информация и никакого спама, честное бойскаутское!
+          </p>
+          <div class="input_button_catalog">
+            <input class="input_style" type="text" placeholder="Ваш e-mail">
             <button class="subscribe_button">Подписаться</button>
+          </div>
         </div>
-      </div>
       </form>
     </main>
 
@@ -225,6 +224,7 @@
         <a class="footer navigation_link" href="https://htmlacademy.ru/"></a>
       </div>
     </footer>
+  </div>
   </body>
 
 </html>
