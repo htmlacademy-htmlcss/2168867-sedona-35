@@ -102,6 +102,7 @@ body {
   text-decoration: none;
   text-align: center;
   width: 507px;
+  position: relative;
 }
 
 .navigation_icons {
@@ -138,6 +139,21 @@ body {
   padding-top: 20px;
   padding-bottom: 20px;
   text-align: center;
+}
+
+.navigation_link.active {
+  position: relative;
+}
+
+.navigation_link.active::after {
+  position: absolute;
+  content: url("..images/advantages/decor_gray.svg");
+  height: 3px;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  top: 43px;
+  background-color: rgba(117, 98, 87, 1);
 }
 
 .hero {
@@ -218,6 +234,17 @@ body {
   padding-top: 102px;
   padding-left: 112.5px;
   padding-right: 112.5px;
+  position: relative;
+}
+
+.advantages_title::after {
+  position: absolute;
+  content: url("..images/advantages/decor_nocolor.svg");
+  background-color: rgba(255, 255, 255, 0.3);
+  height: 2px;
+  width: 60px;
+  top: 178px;
+  left: 170px;
 }
 
 .advantages_title_light_blue::after {
@@ -225,8 +252,8 @@ body {
   content: url("../images/advantages/decor_gray.svg");
   height: 2px;
   width: 60px;
-  top: 1385px;
-  left: 630px;
+  top: 169px;
+  left: 170px;
 }
 
 .advantages_description {
@@ -411,7 +438,6 @@ body {
   width: 100%;
   height: 414px;
   margin: 0;
-
 }
 
 .subscribe_title {
@@ -448,7 +474,8 @@ body {
   width: 242px;
   height: 52px;
   font-weight: 700;
-  font-size: 20px;
+  font-size: 18px;
+  font-style: normal;
   line-height: 36px;
   color: rgba(255, 255, 255, 1);
   text-transform: uppercase;
@@ -484,7 +511,7 @@ input {
   margin: 0;
   padding-right: 70px;
   padding-left: 70px;
-  padding-top: 40px;
+  padding-top: 45px;
   padding-bottom: 30px;
 }
 
@@ -494,13 +521,14 @@ input {
   height: 40px;
   display: flex;
   justify-content: space-between;
- align-items: center;
+  align-items: center;
 }
 
 .social_logo {
   display: flex;
   justify-content: space-between;
- align-items: flex-end;
+  align-items: flex-end;
+  padding-right: 5px;
 }
 
 .footer_link {
@@ -520,10 +548,61 @@ input {
   line-height: 40px;
   min-height: 40px;
   min-width: 331px;
+  position: relative;
   margin: 0;
   padding-top: 5px;
-  padding-left: 205px;
-  padding-right: 194px;
+  left: 26px;
+
+}
+
+.logo_html {
+  position: relative;
+  right: -240px;
+  top: 5px;
+}
+
+.price_start_output::after {
+  position: absolute;
+  content: url("..images/catalog/white_line.svg");
+  background-color: rgba(255, 255, 255, 1);
+  width: 226px;
+  height: 4px;
+  top: 95px;
+  left: -20px;
+}
+
+.price_start_output::before {
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  border-radius: 5px;
+  background-color: rgba(255, 255, 255, 1);
+  content: "";
+  background-image: url("..images/catalog/scroll.svg");
+  top: 86px;
+  left: -20px;
+}
+
+.price_end_output::after {
+  position: absolute;
+  content: url("..images/catalog/white_line.svg");
+  background-color: rgba(255, 255, 255, 0.3);
+  width: 78px;
+  height: 4px;
+  top: 93px;
+}
+
+.price_end_output::before {
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  border-radius: 5px;
+  background-color: rgba(255, 255, 255, 1);
+  content: "";
+  background-image: url("..images/catalog/scroll.svg");
+  top: 86px;
+  left: 38px;
+
 }
 
 .visually_hidden {
@@ -545,9 +624,9 @@ input {
 .page_inner {
   margin: 0;
   color: rgba(255, 255, 255, 1);
-  background-image: url("../images/catalog/background_iner.jpg");
+  background-image: url("../images/catalog/background.jpg");
   background-repeat: no-repeat;
-  height: 408px;
+  height: 412px;
 }
 
 .page_inner_title {
@@ -567,10 +646,15 @@ input {
   display: flex;
   margin: 0;
   width: 114px;
-  padding-top: 8px;
   padding-bottom: 40px;
   padding-left: 70px;
   padding-right: 1016px;
+}
+
+.breadcrumbs-link {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 21px;
 }
 
 .breadcrumbs_home_logo {
@@ -639,8 +723,69 @@ input {
   margin: 0;
   position: absolute;
   bottom: 33.5px;
-  left: -220px;
+  left: 2px;
+  top: 0;
+  width: 20px;
+  height: 20px;
 }
+
+/*тут стилизую радиокнопку*/
+.catalog_filter_item {
+  position: relative;
+}
+
+.control_input {
+  appearance: none;
+  position: absolute;
+}
+
+.control {
+  color: rgba(255, 255, 255, 1);
+  cursor: pointer;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 23px;
+  margin-bottom: 16px;
+}
+
+.control:before {
+  content: "";
+  display: block;
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  background-color: rgba(255, 255, 255, 1);
+  border-radius: 4px;
+  border: 1px solid rgba(204, 204, 204, 1);
+  top: 0;
+  left: 0;
+  z-index: 1;
+}
+
+.control:after {
+  content: "";
+  display: block;
+  width: 12.2px;
+  height: 9.9px;
+  opacity: 0;
+  position: absolute;
+  top: 3px;
+  left: 3px;
+  z-index: 2;
+}
+
+.control_input:checked .control:before {
+  border-color: rgba(131, 179, 211, 1);
+}
+
+.control_input:checked .control:after {
+  opacity: 1;
+  background-image: url("..images/catalog/checkbox.svg");
+  width: 12.2px;
+  height: 9.9px;
+}
+
+/*Закончился стиль радио*/
 
 .right_menu {
   margin: 0;
@@ -652,6 +797,16 @@ input {
   display: flex;
   flex-direction: column;
   margin: 0;
+  width: 288px;
+  padding-right: 70px;
+}
+
+.price_title {
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 24px;
+  margin: 0;
+  padding-bottom: 32px;
 }
 
 .price_button {
@@ -659,6 +814,7 @@ input {
   flex-direction: column;
   padding-bottom: 138px;
   margin: 0;
+  padding-top: 58px;
 }
 
 .button_apply {
@@ -666,13 +822,17 @@ input {
   border: none;
   width: 191px;
   height: 36px;
-  font-size: 16px;
   font-weight: 700;
-  color: rgba(255, 255, 255, 1);
+  font-size: 16px;
   line-height: 20px;
+  color: rgba(255, 255, 255, 1);
   text-transform: uppercase;
   background-color: rgba(130, 179, 211, 1);
-  margin-bottom: 32px;
+  margin-bottom: 40px;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 50px;
+  padding-right: 50px;
 }
 
 .button_reset {
@@ -680,63 +840,12 @@ input {
   border: none;
   width: 191px;
   height: 36px;
-  font-size: 16px;
   font-weight: 700;
+  font-size: 16px;
   line-height: 20px;
   text-transform: uppercase;
   background: transparent;
   color: rgba(255, 255, 255, 1);
-}
-
-.head_sorting {
-  display: flex;
-  margin: 0;
-  padding-top: 50px;
-  padding-left: 70px;
-  padding-right: 70px;
-  padding-bottom: 30px;
-  justify-content: space-between;
-}
-
-.select_control {
-  width: 292px;
-  border: 2px solid rgba(229, 229, 229, 1);
-}
-
-.filter_card {
-  width: 16px;
-  height: 14px;
-  padding-top: 14px;
-  padding-bottom: 14px;
-  padding-left: 16px;
-  padding-right: 16px;
-  border: 2px solid rgba(0, 0, 0, 1);
-  border-radius: 4px;
-  margin: 0;
-}
-
-.filter_text {
-  width: 16px;
-  height: 14px;
-  padding-top: 14px;
-  padding-bottom: 14px;
-  padding-left: 16px;
-  padding-right: 16px;
-  border: 2px solid rgba(230, 230, 230, 1);
-  border-radius: 4px;
-  margin: 0;
-}
-
-.filter_card_text {
-  width: 16px;
-  height: 14px;
-  padding-top: 14px;
-  padding-bottom: 14px;
-  padding-left: 16px;
-  padding-right: 16px;
-  border: 2px solid rgba(230, 230, 230, 1);
-  border-radius: 4px;
-  margin: 0;
 }
 
 .cards_all_title {
@@ -745,7 +854,37 @@ input {
   font-size: 30px;
   line-height: 36px;
   margin: 0;
+  height: 36px;
+  padding-right: 140px;
 }
+
+.filter_card {
+  border-radius: 4px;
+  border: 1px solid rgba(0, 0, 0, 1);
+  padding-top: 17px;
+  padding-bottom: 17px;
+  padding-left: 16px;
+  padding-right: 16px;
+}
+
+.filter_card_text {
+  border-radius: 4px;
+  border: 1px solid rgba(229, 229, 229, 1);
+  padding-top: 17px;
+  padding-bottom: 17px;
+  padding-left: 16px;
+  padding-right: 16px;
+}
+
+.filter_text {
+  border-radius: 4px;
+  border: 1px solid rgba(229, 229, 229, 1);
+  padding-top: 17px;
+  padding-bottom: 17px;
+  padding-left: 16px;
+  padding-right: 16px;
+}
+
 
 .product_list {
   display: flex;
@@ -814,6 +953,25 @@ input {
 
 .cards_all {
   background-color: rgba(255, 255, 255, 1);
+  display: flex;
+  justify-content: space-between;
+  height: 49px;
+  padding-top: 56.5px;
+  padding-bottom: 33px;
+  padding-left: 70px;
+  padding-right: 70px;
+}
+
+.select_control {
+  border: solid 2px rgba(230, 230, 230, 1);
+  border-radius: 4px;
+  width: 292px;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 21px;
+  padding-top: 14px;
+  padding-bottom: 14px;
+  padding-left: 14px;
 }
 
 .card_button {
@@ -951,8 +1109,8 @@ input {
   display: inline-block;
   position: absolute;
   height: 20px;
-  width: 70px;
-  background: url("../images/catalog/stars.svg") repeat-x;
+  width: 88px;
+  background: url("../images/catalog/stars.svg") space;
 }
 
 .card_rating_three::before {
@@ -961,8 +1119,8 @@ input {
   display: inline-block;
   position: absolute;
   height: 20px;
-  width: 54px;
-  background: url("../images/catalog/stars.svg") repeat-x;
+  width: 68px;
+  background: url("../images/catalog/stars.svg") space;
 }
 
 .card_rating_two::before {
@@ -971,16 +1129,17 @@ input {
   display: inline-block;
   position: absolute;
   height: 20px;
-  width: 36px;
-  background: url("../images/catalog/stars.svg") repeat-x;
+  width: 42px;
+  background: url("../images/catalog/stars.svg") space;
 }
 
 .pagination {
   min-height: 60px;
   padding-left: 70px;
   padding-right: 70px;
-  padding-bottom: 60px;
-  padding-top: 80px;
+  padding-bottom: 54px;
+  padding-top: 66px;
+  background-color: rgba(255, 255, 255, 1);
 }
 
 .pagination_second {
@@ -990,15 +1149,35 @@ input {
   text-transform: uppercase;
   background-color: rgba(242, 242, 242, 1);
   color: rgba(0, 0, 0, 1);
-  padding-left: 23.45px;
-  padding-right: 24.55px;
-  padding-top: 11.36px;
-  padding-bottom: 12.64px;
   border-radius: 4px;
+  width: 60px;
+  height: 60px;
+  padding-top: 17.23px;
+  padding-bottom: 17.23px;
+  padding-left: 24.33px;
+  padding-right: 24.33px;
+  margin-right: 2px;
 }
 
 .pagination_blu {
-  width: 12px;
+  width: 60px;
+  height: 60px;
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 36px;
+  text-transform: uppercase;
+  background-color: rgba(130, 179, 211, 1);
+  color: rgba(255, 255, 255, 1);
+  padding-top: 17.23px;
+  padding-bottom: 17.23px;
+  padding-left: 24.33px;
+  padding-right: 24.34px;
+  border-radius: 4px;
+  margin-right: 2px;
+}
+
+.pagination_blu_double_number {
+  width: 23px;
   height: 36px;
   font-size: 20px;
   font-weight: 700;
@@ -1006,11 +1185,12 @@ input {
   text-transform: uppercase;
   background-color: rgba(130, 179, 211, 1);
   color: rgba(255, 255, 255, 1);
-  padding-left: 23.45px;
-  padding-right: 24.55px;
-  padding-top: 11.36px;
-  padding-bottom: 12.64px;
+  padding-top: 17.23px;
+  padding-bottom: 17.23px;
+  padding-left: 18.67px;
+  padding-right: 18.66px;
   border-radius: 4px;
+  margin-right: 2px;
 }
 
 .pagination_white {
@@ -1020,10 +1200,10 @@ input {
   text-transform: uppercase;
   background-color: rgba(255, 255, 255, 1);
   color: rgba(0, 0, 0, 1);
-  padding-left: 23.45px;
-  padding-right: 23.45px;
-  padding-top: 11.36px;
-  padding-bottom: 12.64px;
+  padding-top: 17.23px;
+  padding-bottom: 17.23px;
+  padding-left: 22.37px;
+  padding-right: 22.36px;
   border-radius: 4px;
 }
 
@@ -1071,9 +1251,78 @@ input {
   padding-left: 20px;
 }
 
+.price_output_style_start {
+  background-color: rgba(242, 242, 242, 1);
+  color: rgba(0, 0, 0, 1);
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 24px;
+  width: 36px;
+  border-radius: 4px 0 0 4px;
+  margin-right: 2px;
+  padding-left: 106px;
+  padding-top: 12px;
+  padding-bottom: 12px;
+  padding-right: 0;
+}
+
+.price_output_style_end {
+  background-color: rgba(242, 242, 242, 1);
+  color: rgba(0, 0, 0, 1);
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 24px;
+  width: 36px;
+  border-radius: 0 4px 4px 0;
+  padding-left: 106px;
+  padding-top: 12px;
+  padding-bottom: 12px;
+  padding-right: 0;
+}
+
+.output_price {
+  display: flex;
+}
+
+.price_start_output {
+  position: absolute;
+  color: rgba(0, 0, 0, 1);
+  margin: 0;
+  top: 58px;
+  left: 600px;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 24px;
+  padding-top: 12px;
+  padding-bottom: 12px;
+}
+
+.price_end_output {
+  position: absolute;
+  color: rgba(0, 0, 0, 1);
+  margin: 0;
+  left: 750px;
+  top: 60px;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 24px;
+  padding-top: 12px;
+  padding-bottom: 12px;
+}
+
 .subscribe_form_catalog {
   background-color: rgba(255, 255, 255, 1);
-  width: 100%;
   height: 414px;
   margin: 0;
+}
+
+.radio_price {
+  display: flex;
+  margin: 0;
+}
+
+.radio_button {
+  margin: 0;
+  width: 20px;
+  height: 20px;
 }
