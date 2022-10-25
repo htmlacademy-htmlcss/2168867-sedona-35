@@ -23,6 +23,7 @@ body {
   font-family: "PT Sans", sans-serif;
   font-size: 22px;
   line-height: 26px;
+  font-weight: 400;
   color: rgba(0, 0, 0, 1);
   background-color: rgba(242, 242, 242, 1);
   display: flex;
@@ -36,6 +37,15 @@ body {
   flex-grow: 1;
 }
 
+.page_header {
+  color: rgba(0, 0, 0, 1);
+  background-color: rgba(255, 255, 255, 1);
+  width: 100%;
+  min-height: 64px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+
 .main_index {
   background-size: 100%;
   background-repeat: no-repeat;
@@ -45,15 +55,6 @@ body {
   height: 485px;
   width: 100%;
   margin: 0;
-}
-
-.page_header {
-  color: rgba(0, 0, 0, 1);
-  background-color: rgba(255, 255, 255, 1);
-  width: 100%;
-  min-height: 64px;
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
 }
 
 .navigation_logo {
@@ -80,8 +81,7 @@ body {
   flex-wrap: wrap;
   justify-content: space-between;
   margin: 0;
-  padding-left: 30px;
-  padding-right: 285px;
+  padding: 0 285px 0 30px;
   list-style: none;
 }
 
@@ -116,6 +116,7 @@ body {
 .navigation_link_button {
   background-color: rgba(117, 97, 87, 1);
   border-radius: 4px;
+  font-family: inherit;
   font-weight: 700;
   font-size: 16px;
   line-height: 20px;
@@ -126,18 +127,14 @@ body {
   max-height: 36px;
   text-transform: uppercase;
   margin: 0;
-  padding-top: 8px;
-  padding-bottom: 8px;
+  padding: 8px 0 8px 0;
 }
 
 .navigation_item {
   max-width: 100px;
   max-height: 24px;
   margin: 0;
-  padding-left: 16px;
-  padding-right: 16px;
-  padding-top: 20px;
-  padding-bottom: 20px;
+  padding: 20px 16px 20px 16px;
   text-align: center;
 }
 
@@ -168,19 +165,14 @@ body {
   color: rgba(0, 0, 0, 1);
   min-width: 651px;
   align-items: center;
-  padding-right: 275px;
-  padding-left: 275px;
-  padding-bottom: 90px;
+  padding: 0 275px 90px 275px;
   margin: 0;
 }
 
 .hero_title {
   text-transform: uppercase;
   text-align: center;
-  padding-left: 290px;
-  padding-right: 290px;
-  padding-top: 69px;
-  padding-bottom: 25px;
+  padding: 69px 290px 25px 290px;
   margin: 0;
   font-weight: 700;
   font-size: 30px;
@@ -216,9 +208,7 @@ body {
   min-width: 175px;
   min-height: 55px;
   margin: 0;
-  padding-top: 92px;
-  padding-left: 112.5px;
-  padding-right: 112.5px;
+  padding: 92px 113px 0 113px;
   position: relative;
 }
 
@@ -231,9 +221,7 @@ body {
   min-width: 175px;
   min-height: 55px;
   margin: 0;
-  padding-top: 102px;
-  padding-left: 112.5px;
-  padding-right: 112.5px;
+  padding: 102px 113px 0 113px;
   position: relative;
 }
 
@@ -263,10 +251,7 @@ body {
   line-height: 21px;
   margin: 0;
   max-width: 230px;
-  padding-top: 62px;
-  padding-left: 85px;
-  padding-right: 85px;
-  padding-bottom: 111px;
+  padding: 62px 85px 111px 85px;
 }
 
 .advantages_item_blue {
@@ -304,8 +289,7 @@ body {
   margin: 0;
   text-transform: uppercase;
   text-align: center;
-  padding-bottom: 30px;
-  padding-top: 182px;
+  padding: 182px 0 30px 0;
   position: relative;
 }
 
@@ -313,8 +297,7 @@ body {
   margin: 0;
   text-transform: uppercase;
   text-align: center;
-  padding-bottom: 30px;
-  padding-top: 182px;
+  padding: 182px 0 30px 0;
   position: relative;
 }
 
@@ -322,8 +305,7 @@ body {
   margin: 0;
   text-transform: uppercase;
   text-align: center;
-  padding-bottom: 30px;
-  padding-top: 182px;
+  padding: 182px 0 30px 0;
   position: relative;
 }
 
@@ -334,9 +316,7 @@ body {
   line-height: 21px;
   margin: 0;
   max-width: 230px;
-  padding-left: 85px;
-  padding-right: 85px;
-  padding-bottom: 81px;
+  padding: 0 85px 81px 85px;
 }
 
 .services_title_house::before {
@@ -387,18 +367,13 @@ body {
   line-height: 36px;
   margin: 0;
   width: 297px;
-  padding-left: 451.5px;
-  padding-right: 451.5px;
-  padding-top: 96px;
-  padding-bottom: 20px;
+  padding: 96px 451.5px 20px 451.5px;
 }
 
 .booking_description {
   text-align: center;
   max-width: 592px;
-  padding-left: 304px;
-  padding-right: 304px;
-  padding-bottom: 54px;
+  padding: 0 304px 54px 304px;
   margin: 0;
 }
 
@@ -414,13 +389,8 @@ body {
   max-width: 376px;
   height: 36px;
   text-transform: uppercase;
-  margin-left: 412px;
-  margin-right: 412px;
-  margin-bottom: 96px;
-  padding-top: 8px;
-  padding-bottom: 8px;
-  padding-left: 50px;
-  padding-right: 50px;
+  margin: 0 412px 96px 412px;
+  padding: 8px 50px 8px 50px;
   align-items: center;
 }
 
@@ -448,23 +418,15 @@ body {
   line-height: 36px;
   color: rgba(242, 242, 242, 1);
   min-width: 404px;
-  padding-top: 96px;
-  padding-bottom: 20px;
-  padding-left: 398px;
-  padding-right: 398px;
+  padding: 96px 398px 20px 398px;
   margin: 0;
 }
 
 .subscribe_description {
   text-align: center;
-  font-size: 22px;
-  font-weight: 400;
-  line-height: 26px;
   color: rgba(255, 255, 255, 1);
   max-width: 475px;
-  padding-left: 362.5px;
-  padding-right: 362.5px;
-  padding-bottom: 54px;
+  padding: 0 362.5px 54px 362.5px;
   margin: 0;
 }
 
@@ -473,10 +435,11 @@ body {
   border: none;
   width: 242px;
   height: 52px;
+  font-family: inherit;
   font-weight: 700;
-  font-size: 18px;
-  font-style: normal;
+  font-size: 20px;
   line-height: 36px;
+  font-style: normal;
   color: rgba(255, 255, 255, 1);
   text-transform: uppercase;
   background-color: rgba(130, 179, 211, 1);
@@ -492,8 +455,7 @@ input {
 .input_button {
   display: flex;
   width: 684px;
-  padding-left: 258px;
-  padding-right: 258px;
+  padding: 0 258px 0 258px;
 }
 
 .page_footer {
@@ -509,10 +471,7 @@ input {
   max-width: 1060px;
   max-height: 120px;
   margin: 0;
-  padding-right: 70px;
-  padding-left: 70px;
-  padding-top: 45px;
-  padding-bottom: 30px;
+  padding: 45px 70px 30px 70px;
 }
 
 .footer_social {
@@ -543,6 +502,7 @@ input {
 .contacts_tel {
   text-decoration: none;
   color: rgba(0, 0, 0, 1);
+  font-family: inherit;
   font-weight: 400;
   font-size: 40px;
   line-height: 40px;
@@ -550,9 +510,8 @@ input {
   min-width: 331px;
   position: relative;
   margin: 0;
-  padding-top: 5px;
+  padding-top: 3px;
   left: 26px;
-
 }
 
 .logo_html {
@@ -633,9 +592,7 @@ input {
   margin: 0;
   width: 494.4px;
   height: 78px;
-  padding-top: 35px;
-  padding-left: 70px;
-  padding-right: 635.6px;
+  padding: 35px 635.6px 0 70px;
   font-size: 60px;
   font-weight: 700;
   line-height: 78px;
@@ -646,9 +603,7 @@ input {
   display: flex;
   margin: 0;
   width: 114px;
-  padding-bottom: 40px;
-  padding-left: 70px;
-  padding-right: 1016px;
+  padding: 0 1016px 40px 70px;
 }
 
 .breadcrumbs-link {
@@ -715,8 +670,7 @@ input {
 .control {
   margin: 0;
   position: relative;
-  padding-left: 40px;
-  padding-bottom: 32px;
+  padding: 0 0 32px 40px;
 }
 
 .control_input {
@@ -812,9 +766,8 @@ input {
 .price_button {
   display: flex;
   flex-direction: column;
-  padding-bottom: 138px;
+  padding: 58px 0 138px 0;
   margin: 0;
-  padding-top: 58px;
 }
 
 .button_apply {
@@ -822,6 +775,7 @@ input {
   border: none;
   width: 191px;
   height: 36px;
+  font-family: inherit;
   font-weight: 700;
   font-size: 16px;
   line-height: 20px;
@@ -829,10 +783,7 @@ input {
   text-transform: uppercase;
   background-color: rgba(130, 179, 211, 1);
   margin-bottom: 40px;
-  padding-top: 8px;
-  padding-bottom: 8px;
-  padding-left: 50px;
-  padding-right: 50px;
+  padding: 8px 50px 8px 50px;
 }
 
 .button_reset {
@@ -840,6 +791,7 @@ input {
   border: none;
   width: 191px;
   height: 36px;
+  font-family: inherit;
   font-weight: 700;
   font-size: 16px;
   line-height: 20px;
@@ -855,36 +807,42 @@ input {
   line-height: 36px;
   margin: 0;
   height: 36px;
-  padding-right: 140px;
+  padding-right: 172px;
+  padding-top: 5px;
+}
+
+.visually_cards {
+  display: flex;
+  justify-content: space-between;
+  margin-left: 0 0 0 10px;
+  position: relative;
+  width: 160px;
 }
 
 .filter_card {
   border-radius: 4px;
   border: 1px solid rgba(0, 0, 0, 1);
-  padding-top: 17px;
-  padding-bottom: 17px;
-  padding-left: 16px;
-  padding-right: 16px;
+  padding: 17px 15px 16px 14px;
+  margin-right: 3px;
+  margin-left: 2px;
 }
 
 .filter_card_text {
   border-radius: 4px;
   border: 1px solid rgba(229, 229, 229, 1);
-  padding-top: 17px;
-  padding-bottom: 17px;
-  padding-left: 16px;
-  padding-right: 16px;
+  padding: 17px 16px 17px 16px;
+  margin-right: 3px;
+  margin-left: 3px;
 }
+
 
 .filter_text {
   border-radius: 4px;
   border: 1px solid rgba(229, 229, 229, 1);
-  padding-top: 17px;
-  padding-bottom: 17px;
-  padding-left: 16px;
-  padding-right: 16px;
+  padding: 17px 16px 17px 16px;
+  margin-right: 3px;
+  margin-left: 3px;
 }
-
 
 .product_list {
   display: flex;
@@ -897,13 +855,11 @@ input {
 .product_card {
   display: flex;
   flex-direction: column;
-  margin: 0;
+  margin: 0 0 18px 18px;
   width: 340px;
   height: 438px;
   border: 1px solid rgba(230, 230, 230, 1);
   border-radius: 4px;
-  margin-left: 20px;
-  margin-bottom: 20px;
 }
 
 .product_link {
@@ -913,19 +869,14 @@ input {
   color: rgba(0, 0, 0, 1);
   text-decoration: none;
   width: 300px;
-  padding-top: 16px;
-  padding-bottom: 16px;
-  padding-left: 20px;
-  padding-right: 20px;
+  padding: 16px 20px 16px 20px;
 }
 
 .product_card_image {
   width: 300px;
   height: 212px;
   margin: 0;
-  padding-top: 20px;
-  padding-left: 20px;
-  padding-right: 20px;
+  padding: 20px 20px 0 20px;
 }
 
 .product_cards_title {
@@ -940,9 +891,7 @@ input {
   display: flex;
   justify-content: space-between;
   margin: 0;
-  padding-bottom: 16px;
-  padding-left: 20px;
-  padding-right: 20px;
+  padding: 0 20px 16px 20px;
 }
 
 .product_card_type {
@@ -956,33 +905,34 @@ input {
   display: flex;
   justify-content: space-between;
   height: 49px;
-  padding-top: 56.5px;
-  padding-bottom: 33px;
-  padding-left: 70px;
-  padding-right: 70px;
+  padding: 50px 70px 40px 70px;
 }
 
 .select_control {
   border: solid 2px rgba(230, 230, 230, 1);
   border-radius: 4px;
   width: 292px;
+  font-family: inherit;
   font-weight: 400;
   font-size: 18px;
   line-height: 21px;
-  padding-top: 14px;
-  padding-bottom: 14px;
   padding-left: 14px;
+  padding-right: 14px;
+  position: relative;
+  left: -18px;
 }
 
 .card_button {
   display: flex;
   margin: 0;
   width: 140px;
+  font-family: inherit;
 }
 
 .card_link_button {
   background-color: rgba(117, 97, 87, 1);
   border-radius: 4px;
+  font-family: inherit;
   font-size: 16px;
   font-weight: 700;
   line-height: 20px;
@@ -991,19 +941,18 @@ input {
   width: 140px;
   height: 36px;
   text-transform: uppercase;
-  margin-left: 20px;
-  margin-right: 20px;
+  margin: 0 20px 0 20px;
   border-color: transparent;
   display: flex;
   justify-content: center;
   flex-direction: column;
-  padding-left: 26px;
-  padding-right: 26px;
+  padding: 0 26px 0 26px;
 }
 
 .card_like_button {
   background-color: rgba(130, 179, 211, 1);
   border-radius: 4px;
+  font-family: inherit;
   font-size: 16px;
   font-weight: 700;
   line-height: 20px;
@@ -1023,6 +972,7 @@ input {
   font-size: 16px;
   font-weight: 700;
   line-height: 20px;
+  font-family: inherit;
   color: rgba(255, 255, 255, 1);
   text-decoration: none;
   text-align: center;
@@ -1038,45 +988,40 @@ input {
   font-weight: 400;
   font-size: 16px;
   line-height: 20px;
+  font-family: inherit;
   border-radius: 4px;
   color: rgba(0, 0, 0, 1);
   text-decoration: none;
   text-align: center;
   max-width: 140px;
-  height: 36px;
+  height: 23px;
   text-transform: uppercase;
-  margin-top: 16px;
-  margin-left: 180px;
-  margin-right: 20px;
+  margin: 16px 20px 0 180px;
   border-color: transparent;
   position: relative;
   display: flex;
-  padding-left: 23px;
-  padding-top: 9px;
-  padding-bottom: 8px;
+  padding: 9px 22px 8px 23px;
+  font-family: inherit;
 }
 
 .card_rating_three {
   background-color: rgba(242, 242, 242, 1);
   font-weight: 400;
   font-size: 16px;
+  font-family: inherit;
   line-height: 20px;
   border-radius: 4px;
   color: rgba(0, 0, 0, 1);
   text-decoration: none;
   text-align: center;
   max-width: 140px;
-  height: 36px;
+  height: 23px;
   text-transform: uppercase;
-  margin-top: 16px;
-  margin-left: 180px;
-  margin-right: 20px;
+  margin: 16px 20px 0 180px;
   border-color: transparent;
   position: relative;
   display: flex;
-  padding-left: 23px;
-  padding-top: 9px;
-  padding-bottom: 8px;
+  padding: 9px 22px 8px 23px;
 }
 
 
@@ -1085,22 +1030,19 @@ input {
   font-weight: 400;
   font-size: 16px;
   line-height: 20px;
+  font-family: inherit;
   border-radius: 4px;
   color: rgba(0, 0, 0, 1);
   text-decoration: none;
   text-align: center;
   max-width: 140px;
-  height: 36px;
+  height: 23px;
   text-transform: uppercase;
-  margin-top: 16px;
-  margin-left: 180px;
-  margin-right: 20px;
+  margin: 16px 20px 0 180px;
   border-color: transparent;
   position: relative;
   display: flex;
-  padding-left: 23px;
-  padding-top: 9px;
-  padding-bottom: 8px;
+  padding: 9px 22px 8px 23px;
 }
 
 .card_rating::before {
@@ -1135,10 +1077,7 @@ input {
 
 .pagination {
   min-height: 60px;
-  padding-left: 70px;
-  padding-right: 70px;
-  padding-bottom: 54px;
-  padding-top: 66px;
+  padding: 68px 70px 54px 70px;
   background-color: rgba(255, 255, 255, 1);
 }
 
@@ -1152,10 +1091,7 @@ input {
   border-radius: 4px;
   width: 60px;
   height: 60px;
-  padding-top: 17.23px;
-  padding-bottom: 17.23px;
-  padding-left: 24.33px;
-  padding-right: 24.33px;
+  padding: 17.23px 24.33px 17.23px 24.33px;
   margin-right: 2px;
 }
 
@@ -1168,10 +1104,7 @@ input {
   text-transform: uppercase;
   background-color: rgba(130, 179, 211, 1);
   color: rgba(255, 255, 255, 1);
-  padding-top: 17.23px;
-  padding-bottom: 17.23px;
-  padding-left: 24.33px;
-  padding-right: 24.34px;
+  padding: 17.23px 24.34px 17.23px 24.33px;
   border-radius: 4px;
   margin-right: 2px;
 }
@@ -1185,10 +1118,7 @@ input {
   text-transform: uppercase;
   background-color: rgba(130, 179, 211, 1);
   color: rgba(255, 255, 255, 1);
-  padding-top: 17.23px;
-  padding-bottom: 17.23px;
-  padding-left: 18.67px;
-  padding-right: 18.66px;
+  padding: 17.23px 18.66px 17.23px 18.66px;
   border-radius: 4px;
   margin-right: 2px;
 }
@@ -1200,11 +1130,9 @@ input {
   text-transform: uppercase;
   background-color: rgba(255, 255, 255, 1);
   color: rgba(0, 0, 0, 1);
-  padding-top: 17.23px;
-  padding-bottom: 17.23px;
-  padding-left: 22.37px;
-  padding-right: 22.36px;
+  padding: 17.23px 22.36px 17.23px 22.37px;
   border-radius: 4px;
+  margin-right: 2px;
 }
 
 .subscribe_title_catalog {
@@ -1215,24 +1143,16 @@ input {
   line-height: 36px;
   color: rgba(0, 0, 0, 1);
   min-width: 404px;
-  padding-top: 96px;
-  padding-bottom: 20px;
-  padding-left: 398px;
-  padding-right: 398px;
+  padding: 96px 398px 20px 398px;
   margin: 0;
 }
 
 .subscribe_description_catalog {
   text-align: center;
-  font-size: 22px;
-  font-weight: 400;
-  line-height: 26px;
   color: rgba(0, 0, 0, 1);
   max-width: 475px;
-  padding-bottom: 54px;
   margin: 0;
-  padding-left: 362.5px;
-  padding-right: 362.5px;
+  padding: 0 362.5px 54px 362.5px;
 }
 
 .input_button_catalog {
@@ -1247,9 +1167,11 @@ input {
   font-weight: 400;
   font-size: 18px;
   line-height: 24px;
+  font-family: inherit;
   color: rgba(0, 0, 0, 1);
   padding-left: 20px;
 }
+
 
 .price_output_style_start {
   background-color: rgba(242, 242, 242, 1);
@@ -1260,10 +1182,7 @@ input {
   width: 36px;
   border-radius: 4px 0 0 4px;
   margin-right: 2px;
-  padding-left: 106px;
-  padding-top: 12px;
-  padding-bottom: 12px;
-  padding-right: 0;
+  padding: 12px 0 12px 106px;
 }
 
 .price_output_style_end {
@@ -1274,10 +1193,7 @@ input {
   line-height: 24px;
   width: 36px;
   border-radius: 0 4px 4px 0;
-  padding-left: 106px;
-  padding-top: 12px;
-  padding-bottom: 12px;
-  padding-right: 0;
+  padding: 12px 0 12px 106px;
 }
 
 .output_price {
@@ -1293,8 +1209,7 @@ input {
   font-weight: 700;
   font-size: 18px;
   line-height: 24px;
-  padding-top: 12px;
-  padding-bottom: 12px;
+  padding: 12px 0 12px 0;
 }
 
 .price_end_output {
@@ -1306,8 +1221,7 @@ input {
   font-weight: 700;
   font-size: 18px;
   line-height: 24px;
-  padding-top: 12px;
-  padding-bottom: 12px;
+  padding: 12px 0 12px 0;
 }
 
 .subscribe_form_catalog {
