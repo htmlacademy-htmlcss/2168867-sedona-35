@@ -469,7 +469,7 @@ body {
 .select_control:disabled,
 .booking_link:disabled,
 .choice_input:disabled,
-.choice_input_off:disabled  {
+.choice_input_off:disabled {
   color: rgba(255, 255, 255, 0.3);
   background-color: rgba(229, 229, 229, 1);
 }
@@ -816,9 +816,9 @@ body {
   padding: 58px 0 138px 0;
   margin: 0;
   position: absolute;
-top:0;
-left:940px;
-bottom: 0;
+  top: 0;
+  left: 940px;
+  bottom: 0;
 }
 
 .button_apply {
@@ -870,8 +870,7 @@ bottom: 0;
   line-height: 36px;
   margin: 0;
   height: 36px;
-  padding-right: 172px;
-  padding-top: 5px;
+  padding: 5px 172px 0 0;
 }
 
 .visually_cards {
@@ -886,24 +885,21 @@ bottom: 0;
   border-radius: 4px;
   border: 2px solid rgba(0, 0, 0, 1);
   padding: 17px 15px 16px 14px;
-  margin-right: 3px;
-  margin-left: 2px;
+  margin: 0 3px 0 2px;
 }
 
 .filter_card_text {
   border-radius: 4px;
   border: 1px solid rgba(229, 229, 229, 1);
   padding: 17px 16px 17px 16px;
-  margin-right: 3px;
-  margin-left: 3px;
+  margin: 0 3px 0 2px;
 }
 
 .filter_text {
   border-radius: 4px;
   border: 1px solid rgba(229, 229, 229, 1);
   padding: 17px 16px 17px 16px;
-  margin-right: 3px;
-  margin-left: 3px;
+  margin: 0 3px 0 3px;
 }
 
 .filter_card:hover,
@@ -995,8 +991,7 @@ bottom: 0;
   font-weight: 400;
   font-size: 18px;
   line-height: 21px;
-  padding-left: 14px;
-  padding-right: 14px;
+  padding: 0 14px 0 14px;
   position: relative;
   left: -18px;
   appearance: none;
@@ -1505,8 +1500,7 @@ bottom: 0;
   font-size: 30px;
   line-height: 36px;
   text-transform: uppercase;
-  padding-left: 70px;
-  padding-top: 64px;
+  padding: 64px 0 0 70px;
   margin: 0;
 }
 
@@ -1635,9 +1629,7 @@ bottom: 0;
   line-height: 24px;
   margin: 0;
   width: 577px;
-  padding-top: 12px;
-  padding-left: 70px;
-  padding-right: 70px;
+  padding: 12px 70px 0 70px;
 }
 
 .adult_number {
@@ -1725,10 +1717,7 @@ bottom: 0;
   line-height: 24px;
   border: transparent;
   margin: 60px 70px 0 70px;
-  padding-top: 18px;
-  padding-bottom: 18px;
-  padding-left: 255px;
-  padding-right: 254px;
+  padding: 18px 254px 18px 255px;
   min-width: 69px;
 }
 
