@@ -1255,6 +1255,17 @@ body {
   color: rgba(255, 255, 255, 0.3);
 }
 
+.product_list::after {
+  content: url("..images/decor/divider.svg");
+  background-color: rgba(0, 0, 0, 0.15);
+  width: 1060px;
+  height: 2px;
+  position: absolute;
+  background-size: contain;
+  top: 1550px;
+  left: 420px;
+}
+
 .subscribe_title_catalog {
   text-transform: uppercase;
   text-align: center;
@@ -1403,7 +1414,6 @@ box-shadow: inset 0 0 3px rgba(131, 179, 211, 1);
   top: -7px;
   right: -10px;
 }
-
 
 .range_toggle:focus {
   outline: 3px solid rgba(131, 179, 211, 1)
