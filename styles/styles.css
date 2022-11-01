@@ -455,11 +455,14 @@ body {
 }
 
 .subscribe_button:hover,
-.subscribe_button:focus {
+.subscribe_button:focus,
+.search:hover,
+.search:focus {
   background-color: rgba(104, 162, 202, 1);
 }
 
-.subscribe_button:active {
+.subscribe_button:active,
+.search:active {
   color: rgba(255, 255, 255, 0.3);
 }
 
@@ -469,7 +472,7 @@ body {
 .select_control:disabled,
 .booking_link:disabled,
 .choice_input:disabled,
-.choice_input_off:disabled  {
+.choice_input_off:disabled {
   color: rgba(255, 255, 255, 0.3);
   background-color: rgba(229, 229, 229, 1);
 }
@@ -757,7 +760,7 @@ body {
 
 .control_radio:hover::before,
 .control:hover::before {
-  border: 3px solid rgba(131, 179, 211, 1);
+  box-shadow: 0 0 3px rgba(131, 179, 211, 1);
 }
 
 .control_input:checked ~ .control_radio::after {
@@ -816,9 +819,9 @@ body {
   padding: 58px 0 138px 0;
   margin: 0;
   position: absolute;
-top:0;
-left:940px;
-bottom: 0;
+  top: 0;
+  left: 940px;
+  bottom: 0;
 }
 
 .button_apply {
@@ -856,7 +859,7 @@ bottom: 0;
 }
 
 .button_reset:focus {
-  border: 3px solid rgba(131, 179, 211, 1);
+  box-shadow: 0 0 3px rgba(131, 179, 211, 1);
 }
 
 .button_reset:active {
@@ -870,8 +873,7 @@ bottom: 0;
   line-height: 36px;
   margin: 0;
   height: 36px;
-  padding-right: 172px;
-  padding-top: 5px;
+  padding: 5px 172px 0 0;
 }
 
 .visually_cards {
@@ -886,24 +888,21 @@ bottom: 0;
   border-radius: 4px;
   border: 2px solid rgba(0, 0, 0, 1);
   padding: 17px 15px 16px 14px;
-  margin-right: 3px;
-  margin-left: 2px;
+  margin: 0 3px 0 2px;
 }
 
 .filter_card_text {
   border-radius: 4px;
   border: 1px solid rgba(229, 229, 229, 1);
   padding: 17px 16px 17px 16px;
-  margin-right: 3px;
-  margin-left: 3px;
+  margin: 0 3px 0 2px;
 }
 
 .filter_text {
   border-radius: 4px;
   border: 1px solid rgba(229, 229, 229, 1);
   padding: 17px 16px 17px 16px;
-  margin-right: 3px;
-  margin-left: 3px;
+  margin: 0 3px 0 3px;
 }
 
 .filter_card:hover,
@@ -918,7 +917,7 @@ bottom: 0;
 .filter_card:focus,
 .filter_card_text:focus,
 .filter_text:focus {
-  border: 2px solid rgba(104, 162, 202, 1);
+  box-shadow: 0 0 2px rgba(131, 179, 211, 1);
   outline: none;
 }
 
@@ -995,11 +994,9 @@ bottom: 0;
   font-weight: 400;
   font-size: 18px;
   line-height: 21px;
-  padding-left: 14px;
-  padding-right: 14px;
+  padding: 0 14px 0 14px;
   position: relative;
   left: -18px;
-  appearance: none;
 }
 
 .select_control:hover,
@@ -1010,19 +1007,6 @@ bottom: 0;
 .select_control:active {
   border: solid 2px rgba(63, 94, 114, 1);
   outline: none;
-}
-
-.cards_all::after {
-  position: absolute;
-  width: 7px;
-  height: 7px;
-  content: "";
-  border-radius: 1px;
-  border-left: 2px solid rgba(0, 0, 0, 1);
-  border-bottom: 2px solid rgba(0, 0, 0, 1);
-  transform: rotate(-46deg);
-  left: 1223px;
-  top: 543px;
 }
 
 .card_button {
@@ -1341,8 +1325,9 @@ bottom: 0;
 .price_output_style_start:focus,
 .price_output_style_end:focus {
   background-color: rgba(230, 230, 230, 1);
-  border: 3px solid rgba(131, 179, 211, 1);
-  outline: none;
+
+outline: none;
+box-shadow: inset 0 0 3px rgba(131, 179, 211, 1);
 }
 
 .price_output_style_start:active,
@@ -1505,8 +1490,7 @@ bottom: 0;
   font-size: 30px;
   line-height: 36px;
   text-transform: uppercase;
-  padding-left: 70px;
-  padding-top: 64px;
+  padding: 64px 0 0 70px;
   margin: 0;
 }
 
@@ -1518,6 +1502,18 @@ bottom: 0;
   padding-left: 70px;
 }
 
+.calendar {
+  position: absolute;
+  top: 182px;
+  left: 610px;
+}
+
+.calendar_off {
+  position: absolute;
+  top: 280px;
+  left: 610px;
+}
+
 .booking_form {
   margin: 0;
   padding-top: 65px;
@@ -1525,14 +1521,14 @@ bottom: 0;
 
 .bookking_date {
   margin: 0;
-  padding-bottom: 48px;
+  padding-bottom: 44px;
 }
 
 .choice_input {
   background-color: rgba(242, 242, 242, 1);
   color: rgba(0, 0, 0, 1);
-  width: 420px;
-  height: 48px;
+  width: 418px;
+  height: 44px;
   border-radius: 4px;
   position: relative;
   left: 20px;
@@ -1547,16 +1543,17 @@ bottom: 0;
 .choice_input_off {
   background-color: rgba(242, 242, 242, 1);
   color: rgba(0, 0, 0, 1);
-  width: 420px;
-  height: 48px;
+  width: 418px;
+  height: 44px;
   border-radius: 4px;
   position: relative;
+  top: 0;
   left: 15px;
   font-weight: 700;
   font-size: 18px;
   line-height: 24px;
   font-family: inherit;
-  padding-left: 20px;
+  padding-left: 17px;
   border-color: transparent;
 }
 
@@ -1570,61 +1567,29 @@ bottom: 0;
 .choice_input_off:focus {
   background-color: rgba(230, 230, 230, 1);
   border: 3px solid rgba(131, 179, 211, 1);
+  outline: none;
 }
 
-.choice_input:invalid ~ .date_invalid {
+.date_invalid {
   content: "Мы не можем отправить вас в прошлое.";
   color: rgba(255, 87, 87, 1);
   position: absolute;
   top: 217px;
-  left: 230px;
+  left: 228px;
   font-weight: 400;
   font-size: 16px;
   line-height: 21px;
 }
 
-.choice_input_off:invalid ~ .date_invalid {
-  content: "Мы не можем отправить вас в прошлое.";
-  color: rgba(255, 87, 87, 1);
-  position: absolute;
-  top: 217px;
-  left: 230px;
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 21px;
-}
-
-.choice_input:valid ~ .date_valid {
+.date_valid {
   content: "На эти даты есть свободные номера. Пока есть.";
   color: rgba(0, 0, 0, 1);
   position: absolute;
-  top: 220px;
-  left: 230px;
+  top: 316px;
+  left: 228px;
   font-weight: 400;
   font-size: 16px;
   line-height: 21px;
-}
-
-.choice_input_off:valid ~ .date_valid {
-  content: "На эти даты есть свободные номера. Пока есть.";
-  color: rgba(0, 0, 0, 1);
-  position: absolute;
-  top: 220px;
-  left: 230px;
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 21px;
-}
-
-.choice_input_off:valid ~ .date_valid {
-  content: "";
-  position: absolute;
-  top: 312px;
-  left: 230px;
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 21px;
-  color: rgba(51, 51, 51, 1);
 }
 
 .guests {
@@ -1635,15 +1600,13 @@ bottom: 0;
   line-height: 24px;
   margin: 0;
   width: 577px;
-  padding-top: 12px;
-  padding-left: 70px;
-  padding-right: 70px;
+  padding: 15px 70px 0 70px;
 }
 
 .adult_number {
   display: flex;
   position: absolute;
-  top: 358px;
+  top: 360px;
   left: 190px;
   width: 111px;
   margin-left: 18px;
@@ -1661,19 +1624,24 @@ bottom: 0;
 .minus {
   background-color: rgba(242, 242, 242, 1);
   color: rgba(117, 97, 87, 0.3);
-  width: 40px;
+  max-width: 40px;
   height: 48px;
-  padding: 13px 10px 13px 11px;
+  padding: 7px 9px 12px 13px;
   border-radius: 4px 0 0 4px;
   border-color: transparent;
   border: none;
+  appearance: none;
 }
 
-.minus:hover {
+.minus:hover,
+.plus:hover,
+.plus_minus_input:hover {
   color: rgba(0, 0, 0, 1);
 }
 
-.minus:focus {
+.minus:focus,
+.plus:focus,
+.plus_minus_input:focus {
   color: rgba(0, 0, 0, 1);
   outline: 3px solid rgba(130, 179, 211, 1);
 }
@@ -1681,32 +1649,24 @@ bottom: 0;
 .plus {
   background-color: rgba(242, 242, 242, 1);
   color: rgba(117, 97, 87, 0.3);
-  width: 40px;
+  max-width: 40px;
   height: 48px;
-  padding: 13px 10px 13px 5px;
+  padding: 13px 13px 13px 13px;
   border-radius: 0 4px 4px 0;
   border-color: transparent;
   border: none;
 }
 
-.plus:hover {
-  color: rgba(0, 0, 0, 1);
-}
-
-.plus:focus {
-  color: rgba(0, 0, 0, 1);
-  outline: 3px solid rgba(130, 179, 211, 1);
-}
-
 .plus_minus_input {
   background-color: rgba(242, 242, 242, 1);
-  padding: 12px 6px 12px 0;
+  padding: 12px 3px 12px 2px;
   font-weight: 700;
   font-size: 18px;
   line-height: 20px;
   width: 30px;
   margin: 0;
   text-align: center;
+  border: none;
   border-radius: 0;
   border-color: transparent;
 }
@@ -1725,12 +1685,10 @@ bottom: 0;
   line-height: 24px;
   border: transparent;
   margin: 60px 70px 0 70px;
-  padding-top: 18px;
-  padding-bottom: 18px;
-  padding-left: 255px;
-  padding-right: 254px;
+  padding: 18px 254px 18px 250px;
   min-width: 69px;
 }
+
 
 .tooltip_toggle {
   width: 26px;
@@ -1780,11 +1738,9 @@ bottom: 0;
   left: 118px;
 }
 
-
-.modal_container_close {
+.modal_container {
   display: none;
 }
-
 
 .visually_hidden {
   visibility: hidden;
