@@ -5,14 +5,14 @@
     <meta charset="utf-8">
     <title>Седона</title>
     <link rel="stylesheet" href="styles/styles.css">
-    <link rel="icon" href="images/favicon.ico"><!-- 32×32 -->
+    <link rel="icon" href="favicon.ico"><!-- 32×32 -->
   </head>
 
   <body>
     <div class="container">
       <header class="page_header" data-test="header">
-        <a class="navigation_logo" href="index.html"> <img class="logo" src="Images/Header/logo.svg" width="140"
-            height="70" alt="Уютный городок Седона"> </a>
+        <a class="navigation_logo" href="index.html"> <img class="logo" src="images/header/logo.svg" width="140"
+            height="70" alt="Уютный городок Седона."> </a>
         <nav class="navigation">
           <ul class="navigation_list">
             <li class="navigation_item"> <a class="navigation_link" href="index.html">Главная</a> </li>
@@ -23,11 +23,12 @@
             <div class="navigation_icons">
               <a class="navigation_link" href="#"> <span class="visually_hidden">
                   Поиск
-                </span> <img class="header_logo" src="Images/Header/search.svg" width="44" height="64" alt="Поиск"> </a>
-              <a class="navigation_link" href="#"> <span class="visually_hidden">
+                </span> <img class="header_logo" src="images/header/search.svg" width="44" height="64" alt="Поиск.">
+              </a>
+              <a class="navigation_link" href="#"><span class="visually_hidden">
                   Избранное
-                </span> <img class="header_logo" src="Images/Header/like_green.svg" width="44" height="64"
-                  alt="Избранное"> </a>
+                </span> <img class="header_logo" src="images/header/like_green.svg" width="44" height="64"
+                  alt="Избранное."> </a>
             </div>
             <a class="navigation_link_button" href="#">Хочу сюда!</a>
           </div>
@@ -62,16 +63,16 @@
                 <p class="catalog_filter_title">Инфраструктура:</p>
                 <ul class="catalog_filter_list">
                   <li class="catalog_filter_item">
-                    <input class="control_input" type="checkbox" name="swimingpool" checked id="check_1" tabindex="1">
+                    <input class="control_input" type="checkbox" name="swimingpool" checked id="check_1" tabindex="1" required>
                     <label class="control" for="check_1">Бассейн</label>
                   </li>
                   <li class="catalog_filter_item">
-                    <input class="control_input" type="checkbox" name="parking" checked id="chek_2" tabindex="1">
-                    <label class="control" for="chek_2">Парковка</label>
+                    <input class="control_input" type="checkbox" name="parking" checked id="check_2" tabindex="1" required>
+                    <label class="control" for="check_2">Парковка</label>
                   </li>
                   <li class="catalog_filter_item">
-                    <input class="control_input" type="checkbox" name="wifi" id="chek_3" tabindex="1">
-                    <label class="control" for="chek_3">Wi-fi</label>
+                    <input class="control_input" type="checkbox" name="wifi" id="check_3" tabindex="1" required>
+                    <label class="control" for="check_3">Wi-fi</label>
                   </li>
                 </ul>
               </div>
@@ -79,15 +80,14 @@
                 <p class="catalog_filter_title">Тип жилья:</p>
                 <ul class="catalog_filter_list">
                   <li class="catalog_filter_item">
-                    <input class="control_input" type="radio" name="catalog_type" checked id="radio_1" tabindex="1">
+                    <input class="control_input" type="radio" name="catalog_type" checked id="radio_1" tabindex="1" required>
                     <label class="control_radio" for="radio_1">Гостиница </label>
-                  </li>
                   <li class="catalog_filter_item">
-                    <input class="control_input" type="radio" name="catalog_type" id="radio_2" tabindex="1">
+                    <input class="control_input" type="radio" name="catalog_type" id="radio_2" tabindex="1" required>
                     <label class="control_radio" for="radio_2">Мотель </label>
                   </li>
                   <li class="catalog_filter_item">
-                    <input class="control_input" type="radio" name="catalog_type" id="radio_3" tabindex="1">
+                    <input class="control_input" type="radio" name="catalog_type" id="radio_3" tabindex="1" required>
                     <label class="control_radio" for="radio_3">Апартаменты </label>
                   </li>
                 </ul>
@@ -98,8 +98,10 @@
               <div class="price">
                 <h3 class="price_title">Стоимость, ₽:</h3>
                 <div class="output_price">
-                  <input class="price_output_style_start" type="text" placeholder="от">
-                  <input class="price_output_style_end" type="text" placeholder="до">
+                  <input class="price_output_style_start" type="text" id="price_start" placeholder="от" required>
+                  <label class="visually_hidden" for="price_start">Цена от</label>
+                  <input class="price_output_style_end" type="text" id="price_finish" placeholder="до" required>
+                  <label class="visually_hidden" for="price_finish">Цена до</label>
                 </div>
                 <p class="price_start_output">0</p>
                 <p class="price_end_output">9000</p>
@@ -140,21 +142,22 @@
           <div class="visually_cards">
             <a href="#" class="button_activ"> <span class="visually_hidden">
                 Показать карточки
-              </span> <img class="filter_card" src="Images/Catalog/filter_cards.svg" width="16" height="14"
-                alt="Показать карточки"> </a>
+              </span> <img class="filter_card" src="images/catalog/filter_cards.svg" width="16" height="14"
+                alt="Показать карточки."> </a>
             <a href="#" class="button"> <span class="visually_hidden">
                 Показать карточки и описание
-              </span> <img class="filter_card_text" src="Images/Catalog/filter_cards_text.svg" width="16" height="14"
-                alt="Показать карточки и описание"> </a>
+              </span> <img class="filter_card_text" src="images/catalog/filter_cards_text.svg" width="16" height="14"
+                alt="Показать карточки и описание."> </a>
             <a href="#" class="button"> <span class="visually_hidden">
                 Показать список
-              </span> <img class="filter_text" src="Images/Catalog/filter_text.svg" width="16" height="14"
-                alt="Показать список"> </a>
+              </span> <img class="filter_text" src="images/catalog/filter_text.svg" width="16" height="14"
+                alt="Показать список."> </a>
           </div>
         </section>
 
         <div class="product_list">
-          <section class="product_card"> <img class="product_card_image" src="Images/Hotel/hotel_1.jpg" alt="Amara" width="300" height="212">
+          <section class="product_card"> <img class="product_card_image" src="images/hotel/hotel_1.jpg"
+              alt="Amara Resort & Spa." width="300" height="212">
             <a class="product_link" href="product.html">
               <h3 class="product_cards_title">Amara Resort & Spa</h3>
             </a>
@@ -170,7 +173,8 @@
             <p class="card_rating">Рейтинг: 8,5</p>
           </section>
 
-          <section class="product_card"> <img class="product_card_image" src="Images/Hotel/hotel_2.jpg" alt="Villas" width="300" height="212">
+          <section class="product_card"> <img class="product_card_image" src="images/hotel/hotel_2.jpg"
+              alt="Villas at Poco Diablo." width="300" height="212">
             <a class="product_link" href="product.html">
               <h3 class="product_cards_title">Villas at Poco Diablo</h3>
             </a>
@@ -186,7 +190,8 @@
             <p class="card_rating">Рейтинг: 9,2</p>
           </section>
 
-          <section class="product_card"> <img class="product_card_image" src="Images/Hotel/hotel_3.jpg" alt="Desert" width="300" height="212">
+          <section class="product_card"> <img class="product_card_image" src="images/hotel/hotel_3.jpg"
+              alt="Desert Quail Inn." width="300" height="212">
             <a class="product_link" href="product.html">
               <h3 class="product_cards_title">Desert Quail Inn</h3>
             </a>
@@ -202,7 +207,8 @@
             <p class="card_rating_three">Рейтинг: 6,9</p>
           </section>
 
-          <section class="product_card"> <img class="product_card_image" src="Images/Hotel/hotel_4.jpg" alt="Desert" width="300" height="212">
+          <section class="product_card"> <img class="product_card_image" src="images/hotel/hotel_4.jpg"
+              alt="GreenTree Inn." width="300" height="212">
             <a class="product_link" href="product.html">
               <h3 class="product_cards_title">GreenTree Inn</h3>
             </a>
@@ -217,7 +223,7 @@
             <p class="product_card_stars visually_hidden">2 звезды</p>
             <p class="card_rating_two">Рейтинг: 5,0</p>
           </section>
-           </div>
+        </div>
 
         <div class="pagination">
           <a class="pagination_second">1</a>
@@ -235,7 +241,7 @@
             <p class="subscribe_description_catalog">Только полезная информация и никакого спама, честное бойскаутское!
             </p>
             <div class="input_button_catalog">
-              <input class="input_style" type="text" placeholder="Ваш e-mail">
+              <input class="input_style" type="text" placeholder="Ваш e-mail" required>
               <button class="subscribe_button">Подписаться</button>
             </div>
           </div>
@@ -245,20 +251,35 @@
       <footer class="page_footer">
         <div class="footer_container">
           <div class="footer_social">
-            <a class="footer_link" href="https://vc.com/htmlacademy"><img class="social_logo"
-                src="Images/Footer/vkontakte.svg" width="24" height="14" alt="Вконтакте"> </a>
-            <a class="footer_link" href="https://t.me/htmlacademy"><img class="social_logo"
-                src="Images/Footer/telegram.svg" width="18" height="15" alt="Телеграм"> </a>
-            <a class="footer_link" href="https://www.youtoobe.com/user/htmlacademy"><img class="social_logo"
-                src="Images/Footer/youtube.svg" width="22" height="16" alt="Ютуб"> </a>
+            <a class="footer_link" href="https://vc.com/htmlacademy"><svg class="social_logo" aria-hidden="true"
+                focusable="false" width="25" height="15" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                <path fill-rule="evenodd" clip-rule="evenodd"
+                  d="M24.116 1.804c.166-.546 0-.948-.795-.948h-2.625c-.668 0-.976.347-1.143.73 0 0-1.335 3.196-3.226 5.272-.612.602-.89.793-1.224.793-.167 0-.418-.19-.418-.738V1.804c0-.656-.184-.948-.74-.948H9.817c-.417 0-.668.304-.668.593 0 .621.946.765 1.043 2.513V7.76c0 .833-.153.984-.487.984-.89 0-3.055-3.21-4.34-6.885-.249-.715-.5-1.003-1.172-1.003H1.566c-.75 0-.9.347-.9.73 0 .682.89 4.07 4.145 8.551 2.17 3.06 5.225 4.72 8.008 4.72 1.67 0 1.875-.369 1.875-1.004V11.54c0-.737.158-.884.687-.884.39 0 1.057.192 2.615 1.667 1.78 1.75 2.073 2.533 3.075 2.533h2.625c.75 0 1.126-.368.91-1.096-.238-.724-1.088-1.775-2.215-3.022-.612-.71-1.53-1.475-1.809-1.858-.389-.49-.278-.71 0-1.147 0 0 3.2-4.426 3.533-5.929h.001Z"
+                  fill="#83B3D3" />
+              </svg><span class="visually_hidden">Вконтакте</span></a>
+            <a class="footer_link" href="https://t.me/htmlacademy"><svg class="social_logo" aria-hidden="true"
+                focusable="false" width="18" height="16" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="M16.785.956.84 7.104C-.248 7.541-.24 8.148.64 8.42l4.094 1.277 9.472-5.976c.448-.272.857-.126.52.173l-7.673 6.925H7.05l.002.001-.283 4.22c.414 0 .597-.19.829-.414l1.988-1.934 4.136 3.055c.762.42 1.31.205 1.5-.706l2.715-12.795c.278-1.114-.425-1.618-1.153-1.29Z"
+                  fill="#83B3D3" />
+              </svg><span class="visually_hidden">Telegram</span></a>
+            <a class="footer_link" href="https://www.youtoobe.com/user/htmlacademy"><svg class="social_logo"
+                aria-hidden="true" focusable="false" width="23" height="18" fill="none"
+                xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="M18.94.356H3.507C1.647.356.333 1.95.333 3.756V13.85c0 1.913 1.314 3.506 3.174 3.506H19.16c1.642 0 3.174-1.593 3.174-3.4v-10.2c-.219-1.806-1.532-3.4-3.393-3.4ZM7.995 12.894V4.819l7.333 4.037-7.333 4.038Z"
+                  fill="#83B3D3" />
+              </svg><span class="visually_hidden">youtoobe</span>
+            </a>
           </div>
           <a class="contacts_tel" href="tel:78128121212">+7 (812) 812-12-12</a>
           <a class="footer_navigation_link" href="https://htmlacademy.ru/"><svg class="logo_html" aria-hidden="true"
-              focusable="false" width="115" height="34" fill="none" xmlns="http://www.w3.org/2000/svg">
+              focusable="false" width="115" height="34" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
               <path
                 d="M0 13.256v2.6h2.5v-2.6H0ZM11.6 4.856c-1.6 0-2.8.7-3.6 1.7h-.1v-6.2h-2v15.5h2v-5.3c0-2.1 1.3-3.6 3.3-3.6 1.8 0 2.9 1.4 2.9 3.2v5.7h2v-6.1c.1-3-1.8-4.9-4.5-4.9ZM26.6 5.156h-4.8v-3.7h-2v3.8h-1.9v2h1.9v6c0 1.7 1 2.7 2.7 2.7h4.1v-2h-3.7c-.7 0-1.1-.4-1.1-1.1v-5.7h4.8v-2ZM41.1 4.956c-1.6 0-2.9.8-3.5 2.1h-.1c-.6-1.2-1.8-2.1-3.4-2.1-1.4 0-2.5.8-3.1 1.8h-.1v-1.6H29v10.6h2v-5.4c0-2 1-3.5 2.6-3.5 1.5 0 2.4 1 2.4 2.6v6.3h2v-5.6c0-2.4 1.4-3.3 2.6-3.3 1.5 0 2.4 1 2.4 2.6v6.3h2v-6.5c.1-2.5-1.4-4.3-3.9-4.3ZM47.8 13.056c0 1.7 1 2.7 2.8 2.7h2v-2h-1.7c-.7 0-1.1-.4-1.1-1.1V.356h-2v12.7ZM28.9 20.056c-.9-1.1-2.2-1.8-3.9-1.8-3.1 0-5.4 2.3-5.4 5.6s2.3 5.6 5.4 5.6c1.8 0 3-.8 3.8-1.9h.1v1.6h2v-10.6h-2v1.5Zm-3.6 7.4c-2.2 0-3.6-1.6-3.6-3.6s1.4-3.6 3.6-3.6 3.6 1.6 3.6 3.6c0 1.9-1.4 3.6-3.6 3.6ZM44.2 22.356c-.5-2.4-2.6-4.1-5.4-4.1-3.4 0-5.6 2.5-5.6 5.6 0 3.1 2.2 5.6 5.6 5.6 2.8 0 4.9-1.8 5.4-4.2h-2.1c-.4 1.3-1.7 2.3-3.3 2.3-2.2 0-3.6-1.6-3.6-3.6s1.4-3.6 3.6-3.6c1.6 0 2.8 1 3.3 2.2h2.1v-.2ZM55.1 20.056c-.9-1.1-2.2-1.8-3.9-1.8-3.1 0-5.4 2.3-5.4 5.6s2.3 5.6 5.4 5.6c1.8 0 3-.8 3.8-1.9h.1v1.6h2v-10.6h-2v1.5Zm-3.6 7.4c-2.2 0-3.6-1.6-3.6-3.6s1.4-3.6 3.6-3.6 3.6 1.6 3.6 3.6c0 1.9-1.5 3.6-3.6 3.6ZM68.7 20.156c-.9-1.1-2.2-1.9-3.9-1.9-3.1 0-5.4 2.3-5.4 5.6s2.2 5.6 5.4 5.6c1.7 0 3-.8 3.8-1.8h.1v1.5h2v-15.4h-2v6.4Zm-3.6 7.3c-2.2 0-3.6-1.6-3.6-3.6s1.4-3.6 3.6-3.6 3.6 1.6 3.6 3.6c-.1 2-1.5 3.6-3.6 3.6ZM78.3 18.256c-3.3 0-5.5 2.5-5.5 5.6 0 3 2.1 5.6 5.5 5.6 2.5 0 4.5-1.3 5.2-3.6h-2.1c-.5 1-1.6 1.6-3 1.6-1.9 0-3.3-1.3-3.4-2.9h8.8c.2-3.6-2-6.3-5.5-6.3Zm0 1.9c1.7 0 3 1 3.3 2.6h-6.5c.3-1.5 1.5-2.6 3.2-2.6ZM98.2 18.256c-1.6 0-2.9.8-3.6 2h-.1c-.6-1.2-1.8-2-3.4-2-1.4 0-2.5.7-3.1 1.8v-1.5h-1.9v10.6h2v-5.4c0-2 1-3.4 2.6-3.5 1.5 0 2.4 1 2.4 2.6v6.3h2v-5.6c0-2.4 1.4-3.3 2.6-3.3 1.5 0 2.4 1 2.4 2.6v6.3h2v-6.5c.1-2.6-1.4-4.4-3.9-4.4ZM109.4 27.356l-3.6-8.9h-2.2l4.8 11.6c-.3.9-.7 1.2-1.7 1.2h-2.5v2h2.5c1.8 0 2.8-.8 3.5-2.6l4.7-12.2h-2.1l-3.4 8.9Z"
                 fill="currentColor" />
-            </svg></a>
+            </svg><span class="visually_hidden">html academy</span>
+          </a>
         </div>
       </footer>
     </div>
