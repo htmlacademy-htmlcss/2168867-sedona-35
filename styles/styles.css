@@ -522,7 +522,7 @@ body {
   max-width: 1060px;
   max-height: 120px;
   margin: 0;
-  padding: 45px 70px 30px 70px;
+  padding: 41px 70px 30px 70px;
 }
 
 .footer_social {
@@ -566,7 +566,7 @@ body {
   min-width: 331px;
   position: relative;
   margin: 0;
-  padding-top: 3px;
+  padding-top: 1px;
   left: 26px;
 }
 
@@ -614,7 +614,7 @@ body {
   flex-wrap: wrap;
   color: rgba(255, 255, 255, 1);
   background-size: cover;
-  background-image: url("../images/catalog/background.jpg");
+  background-image: url("../images/catalog/background_filter.jpg");
   background-repeat: no-repeat;
   min-height: 412px;
 }
@@ -644,6 +644,8 @@ body {
   font-size: 16px;
   line-height: 21px;
   margin: 0;
+  text-decoration: none;
+  color: rgba(255, 255, 255, 1);
 }
 
 .breadcrumbs_home_logo {
@@ -679,7 +681,7 @@ body {
   font-weight: 400;
   font-size: 18px;
   line-height: 23px;
-  padding: 0 0 75px;
+  padding: 0 0 55px;
 }
 
 .catalog_filter_item {
@@ -687,7 +689,7 @@ body {
   margin: 0;
   padding: 0;
   width: 150.43px;
-  height: 40px;
+  min-height: 40px;
 }
 
 .catalog_filter_group {
@@ -741,8 +743,8 @@ body {
   flex-direction: column;
   justify-content: flex-start;
   position: absolute;
-  width: 20px;
-  height: 20px;
+  width: 18px;
+  height: 18px;
   top: 0;
   left: 0;
   background-color: rgba(255, 255, 255, 1);
@@ -766,8 +768,8 @@ body {
   flex-direction: column;
   justify-content: flex-start;
   position: absolute;
-  width: 20px;
-  height: 20px;
+  width: 18px;
+  height: 18px;
   top: 0;
   left: 0;
   background-color: rgba(255, 255, 255, 1);
@@ -788,8 +790,8 @@ body {
   position: absolute;
   width: 10px;
   height: 10px;
-  top: 6px;
-  left: 6px;
+  top: 5px;
+  left: 5px;
   bottom: 3px;
 }
 
@@ -802,8 +804,8 @@ body {
   position: absolute;
   width: 7px;
   height: 7px;
-  top: 6px;
-  left: 6px;
+  top: 5px;
+  left: 5px;
   bottom: 3px;
   transform: rotate(-45deg);
 }
@@ -829,7 +831,7 @@ body {
   font-size: 20px;
   line-height: 24px;
   margin: 0;
-  padding-bottom: 34px;
+  padding-bottom: 32px;
 }
 
 .price_button {
@@ -838,7 +840,7 @@ body {
   padding: 58px 0 138px 0;
   margin: 0;
   position: absolute;
-  top: 70px;
+  top: 68px;
   left: 940px;
   bottom: 80px;
 }
@@ -906,21 +908,21 @@ body {
 .filter_card {
   border-radius: 4px;
   border: 2px solid rgba(0, 0, 0, 1);
-  padding: 17px 15px 16px 14px;
+  padding: 15px 14px 15px 14px;
   margin: 0 3px 0 2px;
 }
 
 .filter_card_text {
   border-radius: 4px;
   border: 1px solid rgba(229, 229, 229, 1);
-  padding: 17px 16px 17px 16px;
+  padding: 15px 16px 17px 16px;
   margin: 0 3px 0 2px;
 }
 
 .filter_text {
   border-radius: 4px;
   border: 1px solid rgba(229, 229, 229, 1);
-  padding: 17px 16px 17px 16px;
+  padding: 15px 16px 17px 16px;
   margin: 0 3px 0 3px;
 }
 
@@ -966,7 +968,7 @@ body {
   color: rgba(0, 0, 0, 1);
   text-decoration: none;
   width: 300px;
-  padding: 16px 20px 16px 20px;
+  padding: 15px 20px 16px 20px;
 }
 
 .product_card_image {
@@ -1004,7 +1006,7 @@ body {
   display: flex;
   justify-content: space-between;
   height: 49px;
-  padding: 50px 70px 40px 70px;
+  padding: 50px 70px 38px 70px;
 }
 
 .select_control {
@@ -1017,7 +1019,7 @@ body {
   line-height: 21px;
   padding: 0 14px 0 14px;
   position: relative;
-  left: -18px;
+  left: -16px;
 }
 
 .select_control:hover,
@@ -1209,6 +1211,7 @@ body {
   min-height: 60px;
   padding: 68px 70px 54px 70px;
   background-color: rgba(255, 255, 255, 1);
+  text-decoration: none;
 }
 
 .pagination_second {
@@ -1223,6 +1226,7 @@ body {
   height: 60px;
   padding: 17.23px 24.33px 17.23px 24.33px;
   margin-right: 2px;
+  text-decoration: none;
 }
 
 .pagination_blu {
@@ -1237,6 +1241,7 @@ body {
   padding: 17.23px 24.34px 17.23px 24.33px;
   border-radius: 4px;
   margin-right: 2px;
+  text-decoration: none;
 }
 
 .pagination_blu_double_number {
@@ -1251,6 +1256,7 @@ body {
   padding: 17.23px 18.66px 17.23px 18.66px;
   border-radius: 4px;
   margin-right: 2px;
+  text-decoration: none;
 }
 
 .pagination_white {
@@ -1263,6 +1269,7 @@ body {
   padding: 17.23px 22.36px 17.23px 22.37px;
   border-radius: 4px;
   margin-right: 2px;
+  text-decoration: none;
 }
 
 .pagination_blu:hover,
@@ -1294,7 +1301,7 @@ body {
   line-height: 36px;
   color: rgba(0, 0, 0, 1);
   min-width: 404px;
-  padding: 96px 398px 20px 398px;
+  padding: 90px 398px 20px 398px;
   margin: 0;
 }
 
@@ -1325,25 +1332,25 @@ body {
 
 .price_output_style_start {
   background-color: rgba(242, 242, 242, 1);
-  color: rgba(0, 0, 0, 1);
-  font-weight: 400;
+  font-weight: 700;
   font-size: 18px;
   line-height: 24px;
-  width: 42px;
+  width: 92px;
+  border: none;
   border-radius: 4px 0 0 4px;
   margin-right: 3px;
-  padding: 6px 2px 2px 96px;
+  padding: 11px 30px 11px 20px;
   border-color: transparent;
 }
 
 .price_output_style_end {
   background-color: rgba(242, 242, 242, 1);
-  color: rgba(0, 0, 0, 1);
-  font-weight: 400;
+  font-weight: 700;
   font-size: 18px;
   line-height: 24px;
-  width: 42px;
-  padding: 10px 0 10px 95px;
+  width: 92px;
+  padding: 11px 30px 11px 20px;
+  border: none;
   border-radius: 0 4px 4px 0;
   border-color: transparent;
 }
@@ -1372,31 +1379,31 @@ body {
 
 .price_start_output {
   position: absolute;
-  color: rgba(0, 0, 0, 1);
-  margin: 0;
-  top: 58px;
-  left: 600px;
-  font-weight: 700;
+  color: rgba(0, 0, 0, 0.3);
+  font-weight: 400;
   font-size: 18px;
   line-height: 24px;
-  padding: 82px 0 12px 0;
+  margin: 0;
+  top: 58px;
+  left: 602px;
+  padding: 82px 0 0 84px;
 }
 
 .price_end_output {
   position: absolute;
-  color: rgba(0, 0, 0, 1);
   margin: 0;
   left: 750px;
   top: 60px;
-  font-weight: 700;
+  color: rgba(0, 0, 0, 0.3);
+  font-weight: 400;
   font-size: 18px;
   line-height: 24px;
-  padding: 82px 0 10px 0;
+  padding: 80px 0 0 82px;
 }
 
 .range {
   position: absolute;
-  top: 220px;
+  top: 218px;
 }
 
 .range_scale {
@@ -1413,6 +1420,7 @@ body {
   left: 0;
   height: 4px;
   background-color: rgba(255, 255, 255, 1);
+  width: 220px;
 }
 
 .range_toggle {
@@ -1426,11 +1434,11 @@ body {
 }
 
 .toggle_min {
-  top: -7px;
+  top: -8px;
 }
 
 .toggle_max {
-  top: -7px;
+  top: -8px;
   right: -10px;
 }
 
@@ -1783,7 +1791,6 @@ body {
   clip: rect(0 0 0 0);
   overflow: hidden;
 }
-
 
 .modal_container {
   display: none;
